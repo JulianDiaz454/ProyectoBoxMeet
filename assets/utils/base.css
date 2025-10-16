@@ -1,0 +1,10 @@
+* { /* Se resetean las propiedades con el selector universal */
+    margin: 0; /* Margenes en 0 */
+    padding: 0; /* Espacio exterior en 0 */
+    box-sizing: border-box; /* Calculamos el tamaño de los elementos con ancho y altura */
+}
+
+/* Custom Propierties */
+:root {
+    /* Variables */
+}
