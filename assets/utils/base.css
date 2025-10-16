@@ -1,10 +1,40 @@
-* { /* Se resetean las propiedades con el selector universal */
+/* Archivo que contiene el selector universal y las custom propierties */
+
+* { /* Selector universal para resetear propiedades */
     margin: 0; /* Margenes en 0 */
     padding: 0; /* Espacio exterior en 0 */
     box-sizing: border-box; /* Calculamos el tamaño de los elementos con ancho y altura */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    list-style: none; /* Elimina los puntos de las listas */
 }
 
 /* Custom Propierties */
 :root {
-    /* Variables */
+    /* Tipografia */
+    --fuente-principal-body: "Red Hat Display", sans-serif;
+    --fuente-weight-titulos: 800;
+    --fuente-weight-sub-titulos: 500;
+    --fuente-weight-base:200;
+    --fuente-size-base: 16px;
+
+    /* Colores */
+
+
+    /* Tamaños */
+
+
+}
+
+/* Reseteo de propiedades para la etiqueta body */
+body {
+    font-family: var(--fuente-principal-body);
+    font-weight: var(--fuente-weight-base);
+    font-size: var(--fuente-size-base);
+}
+
+/* Propiedades especificas para evitar el desborde de imagenes */
+img {
+    display: block; /* Block evita un espacio entre las imagenes*/
+    height: 100%;
+    width: auto;
 }
