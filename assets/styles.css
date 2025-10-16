@@ -1,4 +1,11 @@
 /* Archivo que contiene todo el contenido visual */
 
+/* Import para frameworks, fuentes, iconos */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 /* Configuraciones base para todo el proyecto */
-@import url(utils/base.css); /* Custom propierties, reseteos */
+@import url(utils/base.css); /* Custom propierties, selector universal */
+
+/* Componentes */
+
