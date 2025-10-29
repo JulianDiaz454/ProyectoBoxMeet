@@ -1,0 +1,9 @@
+/* Componente usado para los enlaces */
+
+.enlace {
+    color: var(--fuente-color-principal);
+    background-color: var(--fuente-color-enlaces);
+    padding: 1vh 2vw;
+    font-weight: var(--fuente-weight-enlaces);
+    border-radius: 30px;
+} 
