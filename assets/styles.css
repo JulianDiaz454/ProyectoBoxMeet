@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 
-/* Configuraciones base para todo el proyecto */
+/* Configuraciones base y estructurales para todo el proyecto */
 @import url(utils/base.css); /* Custom propierties, selector universal */
+@import url(utils/layout.css); /* Grid, estructuras de las paginas */ 
 
 /* Componentes */
-
+@import url(components/enlaces.css);
