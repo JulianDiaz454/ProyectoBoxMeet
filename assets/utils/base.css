@@ -14,11 +14,14 @@
     --fuente-principal-body: "Red Hat Display", sans-serif;
     --fuente-weight-titulos: 800;
     --fuente-weight-sub-titulos: 500;
-    --fuente-weight-base:200;
+    --fuente-weight-base: 200;
+    --fuente-weight-enlaces: 500;
     --fuente-size-base: 16px;
+    --fuente-color-principal: #fff;
+    --fuente-color-enlaces: #7400a1;
 
     /* Colores */
-
+    --fondo-color-principal: #000;
 
     /* Tamaños */
 
@@ -27,9 +30,14 @@
 
 /* Reseteo de propiedades para la etiqueta body */
 body {
+    /* Estilos para la fuente */
     font-family: var(--fuente-principal-body);
     font-weight: var(--fuente-weight-base);
     font-size: var(--fuente-size-base);
+    color: var(--fuente-color-principal);
+
+    /* Estilos de colores  */
+    background-color: var(--fondo-color-principal);
 }
 
 /* Propiedades especificas para evitar el desborde de imagenes */
