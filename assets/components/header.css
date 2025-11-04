@@ -1,0 +1,21 @@
+/* assets/components/_header.css */
+
+.main-header {
+    /* Propiedades para ubicar los elementos */
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 5vw; 
+    align-items: center; 
+}
+
+/* Estilos para el elemento del logo*/
+.main-header__logo {
+    font-size: 1.8rem;
+    font-weight: var(--fuente-weight-titulos); 
+}
+
+/* Estilos para la etiqueta nav */
+.main-header__nav {
+    display: flex;
+    gap: 1rem;
+}

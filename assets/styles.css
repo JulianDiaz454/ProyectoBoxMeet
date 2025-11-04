@@ -12,4 +12,5 @@
 @import url(pages/index-fondo.css);
 
 /* Componentes */
-@import url(components/enlaces.css);
+@import url(components/boton.css);
+@import url(components/header.css);

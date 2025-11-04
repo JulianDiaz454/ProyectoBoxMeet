@@ -12,7 +12,7 @@
 :root {
     /* Tipografia */
     --fuente-principal-body: "Red Hat Display", sans-serif;
-    --fuente-weight-titulos: 800;
+    --fuente-weight-titulos: 700;
     --fuente-weight-sub-titulos: 500;
     --fuente-weight-base: 200;
     --fuente-weight-enlaces: 500;
@@ -22,10 +22,13 @@
 
     /* Colores */
     --fondo-color-principal: #000;
+    --color-logo: #fff;
 
     /* Tamaños */
 
 
+    /* Bordes */
+    --color-bordes: #fff;
 }
 
 /* Reseteo de propiedades para la etiqueta body */

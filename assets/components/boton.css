@@ -1,9 +1,16 @@
 /* Componente usado para los enlaces de control de inicio */
 
-.enlace {
+.boton {
     color: var(--fuente-color-principal);
     background-color: var(--fuente-color-enlaces);
     padding: 1vh 2vw;
     font-weight: var(--fuente-weight-enlaces);
     border-radius: 30px;
 } 
+
+/* Modificador para el boton, se genera un diseño distinto */
+.boton--secundario {
+    background-color: transparent; 
+    color: var(--fuente-color-principal);
+    border: 1px solid var(--color-bordes);
+}
