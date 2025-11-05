@@ -1,0 +1,19 @@
+/* Componente especifico para formularios */
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+/* Elemento: Estilos para inputs */
+.form__input{
+    border: none;
+    border-radius: var(--radio-bordes-inputs); 
+    background-color: var(--fondos-secundarios); 
+
+    /* Espaciado Base */
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-pequeño-ancho);
+ 
+    /* Transicion */
+    transition: 0.2s;
+}
