@@ -13,6 +13,7 @@
 @import url(components/boton.css);
 @import url(components/header.css);
 @import url(components/form.css);
+@import url(components/footer.css);
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);

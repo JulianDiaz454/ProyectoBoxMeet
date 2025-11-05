@@ -4,13 +4,13 @@
     /* Propiedades para ubicar los elementos */
     display: flex;
     justify-content: space-between; 
-    padding: 0 5vw; 
+    padding: var(--espaciado-header-height) var(--espaciado-header-width); 
     align-items: center; 
 }
 
 /* Estilos para el elemento del logo*/
 .main-header__logo {
-    font-size: 1.8rem;
+    font-size: var(--fuente-size-h1);
     font-weight: var(--fuente-weight-titulos); 
 }
 
