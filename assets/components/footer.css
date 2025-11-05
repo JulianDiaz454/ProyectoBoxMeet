@@ -1,0 +1,59 @@
+/* Componente destinado a dar estilos para el footer */
+
+.main-footer {
+    background-image: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 15%
+    );
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer__contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: var(--ancho-conenido);
+    gap: var(--espaciado-pequeño-alto);
+}
+
+.main-footer__seccion {
+    display: flex;
+    flex-direction: column; 
+    
+    /* Propiedades para controlar el alto de columna */
+    flex-basis: 10px; /* Asegura un alto minimo  */
+    flex-grow: 1;
+}
+
+.main-footer__logo {
+    font-weight: var(--fuente-weight-titulos);
+    font-family: var(--fuente-titulos);
+}
+
+.main-footer__derechos {
+    opacity: 0.7;
+    line-height: 1.4;
+    border-bottom: rgba(255, 255, 255, 0.6) solid 1px;    
+}
+
+.main-footer__titulo {
+    font-family: var(--fuente-titulos);
+}
+
+.main-footer__lista {
+    display: flex;
+    gap: var(--espaciado-pequeño-ancho);
+    margin-bottom: var(--espaciado-pequeño-alto);
+    flex-wrap: wrap
+}
+
+.main-footer__enlace {
+    color: var(--fuente-color-principal);
+}
+
+.main-footer__lista li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.4); 
+    padding-right: var(--espaciado-pequeño-ancho); 
+}
