@@ -10,25 +10,33 @@
 
 /* Custom Propierties */
 :root {
-    /* Tipografia */
-    --fuente-principal-body: "Red Hat Display", sans-serif;
+    /* Bold y tipo de letra */
+    --fuente-principal-body: "Red Hat Display", sans-serif; /* Tipo de letra de la pagina */
+    --fuente-titulos: "Nunito", sans-serif; /* Estilo de fuente para los titulos */
     --fuente-weight-titulos: 700;
     --fuente-weight-sub-titulos: 500;
     --fuente-weight-base: 200;
     --fuente-weight-enlaces: 500;
-    --fuente-size-base: 16px;
-    --fuente-color-principal: #fff;
-    --fuente-color-enlaces: #7400a1;
-
+    
     /* Colores */
     --fondo-color-principal: #000;
     --color-logo: #fff;
-
+    --fuente-color-principal: #fff;
+    --fuente-color-enlaces: #7400a1;
+    --color-fondo-enlaces: #7400a1;
+    --fondos-secundarios: #fff;
+    
     /* Tamaños */
+    --fuente-size-base: 16px;
+    --fuente-size-h2: 2rem;
+    --fuente-size-p: 1.2rem;
+    --espaciado-pequeño-ancho: 15px;
+    --espaciado-pequeño-alto: 8px;
 
 
     /* Bordes */
     --color-bordes: #fff;
+    --radio-bordes-inputs: 20px;
 }
 
 /* Reseteo de propiedades para la etiqueta body */
