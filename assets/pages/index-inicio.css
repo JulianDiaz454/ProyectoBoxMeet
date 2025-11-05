@@ -1,0 +1,72 @@
+/* Archivo que generara los estilos para la pagina index.html
+
+    Estilos para la imagen de fondo
+    Estilos para el main de la pagina
+    Estilos para el hero de la pagina
+
+*/
+
+.index-fondo {
+    /* Estilos para posicionar el fondo */
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    /* Imagen y efecto oscuro */
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 1) 0%,      /* Negro sólido en la parte superior (0% del div) */
+            rgba(0, 0, 0, 0.5) 12%,   /* Semi-transparente cerca del borde (20%) */
+            rgba(0, 0, 0, 0.5) 88%,   /* Mantiene el semi-transparente en el centro */
+            rgba(0, 0, 0, 1) 100%     /* Negro sólido en la parte inferior (100% del div) */
+            ), url(../images/fondo_index.html.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de diseño para el main de la pagina de inicio */
+.pagina-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos especificos para el hero de la pagina */
+.seccion-hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+    gap: 15px;
+}
+
+.seccion-hero__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-size-h2);
+    font-weight: var(--fuente-weight-titulos);
+}
+
+.seccion-hero__parrafo {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-sub-titulos);
+}
+
+.seccion-hero__cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-pequeño-alto);
+}
+
+.seccion-hero__cta-titulo {
+    font-size: var(--fuente-size-p);
+}
+
+.form--hero {
+    display: flex;
+    gap: var(--espaciado-pequeño-alto);
+    justify-content: center;
+}
+
