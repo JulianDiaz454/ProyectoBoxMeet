@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
 }
 
-/* Estilos de diseño para el main de la pagina de inicio */
+/* Estilos para centrar el contenido dentro de main */
 .pagina-main {
     display: flex;
     align-items: center;

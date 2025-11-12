@@ -28,22 +28,25 @@
     
     /* Tamaños */
     --fuente-size-base: 16px;
-    --fuente-size-h1: 2.2rem;
-    --fuente-size-h2: 2rem;
+    --fuente-size-h1: 2.3rem;
+    --fuente-size-h2: 1.9rem;
     --fuente-size-p: 1.4rem;
     --fuente-logo-footer: 1.2rem;
 
     --ancho-conenido: 800px;
+    --ancho-formulario-grande: 450px;
 
     /* Espacios */
     --espaciado-header-height: 3vh;
     --espaciado-header-width: 5vh;
     --espaciado-pequeño-ancho: 15px;
     --espaciado-pequeño-alto: 8px;
+    --espaciado-contendor: 2rem;
 
 
     /* Bordes */
     --color-bordes: #fff;
+    --radio-bordes-contendor: 15px;
     --radio-bordes-inputs: 20px;
 }
 

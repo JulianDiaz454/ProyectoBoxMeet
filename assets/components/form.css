@@ -5,6 +5,13 @@
     justify-content: center;
 }
 
+/* Elemento: Da estilos a cada grupo de label e input */
+.form__grupo {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+
 /* Elemento: Estilos para inputs */
 .form__input{
     border: none;
@@ -16,4 +23,10 @@
  
     /* Transicion */
     transition: 0.2s;
+}
+
+/* Elemento: Estilos para el label */
+.form__label {
+    margin-bottom: var(--espaciado-pequeño-alto);
+    font-weight: var(--fuente-weight-base);
 }
