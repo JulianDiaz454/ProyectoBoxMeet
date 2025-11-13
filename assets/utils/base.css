@@ -15,22 +15,29 @@
     --fuente-titulos: "Nunito", sans-serif; /* Estilo de fuente para los titulos */
     --fuente-weight-titulos: 700;
     --fuente-weight-sub-titulos: 600;
-    --fuente-weight-base: 200;
     --fuente-weight-enlaces: 500;
+    --fuente-weight-base: 200;
     
     /* Colores */
     --fondo-color-principal: #000;
     --color-logo: #fff;
     --fuente-color-principal: #fff;
     --fuente-color-enlaces: #7400a1;
+    --fuente-color-enlaces-claro: #d673fd;
     --color-fondo-enlaces: #7400a1;
     --fondos-secundarios: #fff;
+
+    /* Estilos para pseudoelementos */
+    --color-base-claro: #90179b;
     
     /* Tamaños */
+    --fuente-size-pequeño: 0.9rem; /* Tamaño pensado en textos de tamaño menor a la fuente raiz */
     --fuente-size-base: 16px;
     --fuente-size-h1: 2.3rem;
-    --fuente-size-h2: 1.9rem;
+    --fuente-size-h2: 2rem;
     --fuente-size-p: 1.4rem;
+    --fuente-size-boton: 1.2rem;
+    --fuente-size-label: 1.3rem;
     --fuente-logo-footer: 1.2rem;
 
     --ancho-conenido: 800px;
@@ -41,6 +48,8 @@
     --espaciado-header-width: 5vh;
     --espaciado-pequeño-ancho: 15px;
     --espaciado-pequeño-alto: 8px;
+    --espaciado-mediano-alto: 15px;
+    --espaciado-mediano-ancho: 22px;
     --espaciado-contendor: 2rem;
 
 
