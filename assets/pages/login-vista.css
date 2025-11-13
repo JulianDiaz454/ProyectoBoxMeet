@@ -17,3 +17,10 @@
     font-size: var(--fuente-size-h2);
     margin-bottom: var(--espaciado-pequeño-alto);
 }
+
+/* Elmento: estilos para el enlace de ayuda */
+.tarjeta-login__enlace-ayuda {
+    margin-left: 0.5rem;
+    color: var(--fuente-color-enlaces-claro);
+    font-size: var(--fuente-size-pequeño);
+}
