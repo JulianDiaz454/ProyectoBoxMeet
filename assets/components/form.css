@@ -13,17 +13,33 @@
     text-align: left;
 }
 
+/* Contendero para incorporar iconos a los inputs */
+.form__contenedor-icon {
+    position: relative;
+}
+
+.form__iconos {
+    position: absolute;
+    left: var(--espaciado-pequeño-ancho);
+    transform: translateY(-50%); 
+    z-index: 2;
+    top: 50%;
+    color: var(--colores-morados);
+}
+
 /* Elemento: Estilos para inputs */
 .form__input{
     border: none;
     border-radius: var(--radio-bordes-inputs); 
     background-color: var(--fondos-secundarios); 
+    width: 100%;
 
     /* Espaciado Base */
     padding: var(--espaciado-pequeño-alto) var(--espaciado-pequeño-ancho);
-
+    padding-left: var(--espaciado-grande-ancho);
     /* Transicion */
     transition: 0.2s;
+    outline: none;
 }
 
 /* Elemento: Estilos para el label */

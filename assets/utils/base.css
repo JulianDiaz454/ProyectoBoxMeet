@@ -27,6 +27,10 @@
     --color-fondo-enlaces: #7400a1;
     --fondos-secundarios: #fff;
 
+    --peso-alto: 900;
+    --peso-medio: 600;
+    --peso-bajo: 300;
+
     /* Estilos para pseudoelementos */
     --color-base-claro: #90179b;
     
@@ -46,10 +50,16 @@
     /* Espacios */
     --espaciado-header-height: 3vh;
     --espaciado-header-width: 5vh;
+
     --espaciado-pequeño-ancho: 15px;
     --espaciado-pequeño-alto: 8px;
+
     --espaciado-mediano-alto: 15px;
     --espaciado-mediano-ancho: 22px;
+
+    --espaciado-grande-alto: 30px;
+    --espaciado-grande-ancho: 40px;
+
     --espaciado-contendor: 2rem;
 
 
@@ -57,6 +67,9 @@
     --color-bordes: #fff;
     --radio-bordes-contendor: 15px;
     --radio-bordes-inputs: 20px;
+
+    /* Estilos para los iconos */
+    --colores-morados: #77008f4f;
 }
 
 /* Reseteo de propiedades para la etiqueta body */
