@@ -15,7 +15,7 @@
         <div class="index-fondo"></div>
         <div class="tarjeta-login">
             <h2 class="tarjeta-login__titulo">Iniciar sesión</h2>
-            <form class="form">
+            <form class="form form--disposicion">
                 <div class="form__grupo">
                     <label for="correo_login" class="form__label">Correo electronico</label>
                     <input class="form__input" type="email" name="correo_usuario" id="correo_login" required>
@@ -25,8 +25,33 @@
                     <label for="contraseña_login" class="form__label">Contraseña</label>
                     <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login" required>
                 </div>
+
+                <div class="form__grupo form__grupo--disposicion">
+                    <a href="" class="tarjeta-login__enlace-ayuda">¿Olvidates tu contraseña?</a>
+                    <a href="" class="tarjeta-login__enlace-ayuda">¿No tienes cuenta?</a>
+                </div>
+
+                <button class="boton boton--form">Iniciar sesión</button>
             </form>
         </div>
     </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__contenido">
+            <div class="main-footer__seccion">
+                <p class="main-footer__logo">GeoVan</p>
+                <p class="main-footer__derechos">Colombia, Derechos reservados a Julian Diaz</p>
+            </div>
+ 
+            <nav class="main-footer__seccion">
+                <h4 class="main-footer__titulo">Legal y Ayuda</h4>
+                <ul class="main-footer__lista">
+                    <li><a href="#" class="main-footer__enlace">Política de Privacidad</a></li>
+                    <li><a href="#" class="main-footer__enlace">Términos y Condiciones</a></li>
+                    <li><a href="#" class="main-footer__enlace">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
