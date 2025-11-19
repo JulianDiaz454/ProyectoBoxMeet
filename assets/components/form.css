@@ -1,5 +1,6 @@
 /* Componente especifico para formularios */
 
+/* Bloque: estilos para el  */
 .form {
     display: flex;
     justify-content: center;
@@ -12,21 +13,50 @@
     text-align: left;
 }
 
+/* Contendero para incorporar iconos a los inputs */
+.form__contenedor-icon {
+    position: relative;
+}
+
+.form__iconos {
+    position: absolute;
+    left: var(--espaciado-pequeño-ancho);
+    transform: translateY(-50%); 
+    z-index: 2;
+    top: 50%;
+    color: var(--colores-morados);
+}
+
 /* Elemento: Estilos para inputs */
 .form__input{
     border: none;
     border-radius: var(--radio-bordes-inputs); 
     background-color: var(--fondos-secundarios); 
+    width: 100%;
 
     /* Espaciado Base */
     padding: var(--espaciado-pequeño-alto) var(--espaciado-pequeño-ancho);
- 
+    padding-left: var(--espaciado-grande-ancho);
     /* Transicion */
     transition: 0.2s;
+    outline: none;
 }
 
 /* Elemento: Estilos para el label */
 .form__label {
+    font-size: var(--fuente-size-label);
     margin-bottom: var(--espaciado-pequeño-alto);
     font-weight: var(--fuente-weight-base);
+}
+
+/* Modificador: para cambiar la dirección de elementos del formulario */
+.form--disposicion {
+    flex-direction: column;
+    gap: var(--espaciado-mediano-alto);
+}
+
+/* Modificador: vuelve a poner la disposición de elementos en row */
+.form__grupo--disposicion {
+    flex-direction: row; /* Se vuelve a poner por defecto  */
+    justify-content: space-between;
 }
