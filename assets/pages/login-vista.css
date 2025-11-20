@@ -18,9 +18,12 @@
     margin-bottom: var(--espaciado-pequeño-alto);
 }
 
+<<<<<<< HEAD
+=======
 /* Elmento: estilos para el enlace de ayuda */
 .tarjeta-login__enlace-ayuda {
     margin-left: 0.5rem;
     color: var(--fuente-color-enlaces-claro);
     font-size: var(--fuente-size-pequeño);
 }
+>>>>>>> d960472907db80243659abbf0bc3f93c55cadd64
