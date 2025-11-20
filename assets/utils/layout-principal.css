@@ -1,0 +1,32 @@
+/* Layout para la estructura principal de la pagina */
+
+.body-principal {
+    display: grid;
+
+    grid-template-columns: 0.5fr repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, 1fr) auto;
+
+    grid-template-areas: 
+        "header header header header"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "footer footer footer footer"
+    ;
+}
+
+.main-header {
+    grid-area: header;
+}
+
+.main-sidebar {
+    grid-area: sidebar;
+}
+
+.pagina-main {
+    grid-area: main;
+}
+
+.main-footer {
+    grid-area: footer;
+}
