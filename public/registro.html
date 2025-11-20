@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
     <title>Registro</title>
 </head>
 <body>
-    
+    <header class="main-header">
+        <h1 class="main-header__logo">GeoVan</h1>
+    </header>
+
+    <main class="pagina-main">
+        <div class="index-fondo"></div>
+        <div class="tarjeta-login">
+            <h2 class="tarjeta-login__titulo">Registrarse</h2>
+            <form class="form form--disposicion">
+                <div class="form__grupo">
+                    <label for="nombre_registro" class="form__label">Nombre completo</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-person-circle form__iconos"></i>
+                        <input class="form__input" type="text" name="nombre_usuario" id="nombre_registro" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="correo_login" class="form__label">Correo electronico</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-envelope-fill form__iconos"></i>
+                        <input class="form__input" type="email" name="correo_usuario" id="correo_login" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="contraseña_login" class="form__label">Contraseña</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-lock-fill form__iconos"></i>
+                        <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="contraseña_confirmacion" class="form__label">Confirmar contraseña</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-lock-fill form__iconos"></i>
+                        <input class="form__input" type="password" name="confirmar_contraseña" id="contraseña_confirmacion" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="telefono_usuario" class="form__label">Telefono</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-telephone-fill form__iconos"></i>
+                        <input class="form__input" type="tel" name="numero_telefono" id="telefono_usuario" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo form__grupo--disposicion">
+                    <a href="" class="tarjeta-login__enlace-ayuda">¿Olvidates tu contraseña?</a>
+                    <a href="../public/login.html" class="tarjeta-login__enlace-ayuda">¿Ya tienes cuenta?</a>
+                </div>
+
+                <button class="boton boton--form">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__contenido">
+            <div class="main-footer__seccion">
+                <p class="main-footer__logo">GeoVan</p>
+                <p class="main-footer__derechos">Colombia, Derechos reservados a Julian Diaz</p>
+            </div>
+ 
+            <nav class="main-footer__seccion">
+                <h4 class="main-footer__titulo">Legal y Ayuda</h4>
+                <ul class="main-footer__lista">
+                    <li><a href="#" class="main-footer__enlace">Política de Privacidad</a></li>
+                    <li><a href="#" class="main-footer__enlace">Términos y Condiciones</a></li>
+                    <li><a href="#" class="main-footer__enlace">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
