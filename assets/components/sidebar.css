@@ -1,0 +1,7 @@
+/* Componente para el sidebar */
+
+.main-sidebar {
+    padding: 2rem;
+    background-color: var(--fondo-color-sidebar);
+    border-radius: var(--radio-bordes-contendor);
+}

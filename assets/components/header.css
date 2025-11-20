@@ -19,3 +19,13 @@
     display: flex;
     gap: 1rem;
 }
+
+/* Estilos para los elementos de enlaces */
+.main-header__enlaces {
+    color: var(--fuente-color-principal);
+    font-size: var(--fuente-size-label);
+}
+
+.main-header__enlaces:hover {
+    color: var(--fuente-color-enlaces);
+}

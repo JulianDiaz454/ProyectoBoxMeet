@@ -1,0 +1,6 @@
+/* Componente para darle estilos a los iconos pensados en funcionalidad */
+
+.iconos {
+    font-size: 2rem;
+    color: var(--fuente-color-principal);
+}
