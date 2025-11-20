@@ -8,12 +8,15 @@
 /* Configuraciones base y estructurales para todo el proyecto */
 @import url(utils/base.css); /* Custom propierties, selector universal */
 @import url(utils/layout.css); /* Grid, estructuras de las paginas */ 
+@import url(utils/layout-principal.css); /* Layout especifico para las paginas principales */
 
 /* Componentes */
 @import url(components/boton.css);
 @import url(components/header.css);
 @import url(components/form.css);
 @import url(components/footer.css);
+@import url(components/iconos.css);
+@import url(components/sidebar.css);
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);
