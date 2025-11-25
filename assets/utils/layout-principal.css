@@ -3,15 +3,15 @@
 .body-principal {
     display: grid;
 
-    grid-template-columns: 0.5fr repeat(3, 1fr);
-    grid-template-rows: auto repeat(3, 1fr) auto;
+    grid-template-columns: 0.01fr 0.8fr repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, 1fr) 0.05fr;
 
     grid-template-areas: 
-        "header header header header"
-        "sidebar main main main"
-        "sidebar main main main"
-        "sidebar main main main"
-        "footer footer footer footer"
+        "header header header header header"
+        ". sidebar main main main"
+        ". sidebar main main main"
+        ". sidebar main main main"
+        ". . . .  ."
     ;
 }
 
@@ -25,8 +25,4 @@
 
 .pagina-main {
     grid-area: main;
-}
-
-.main-footer {
-    grid-area: footer;
 }

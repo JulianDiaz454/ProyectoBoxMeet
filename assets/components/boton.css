@@ -6,7 +6,8 @@
     padding: 1vh 2vw;
     font-weight: var(--fuente-weight-enlaces);
     border-radius: 30px;
-    transition: 0.2s;
+    transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades */
+    will-change: transform; /* Mejora el rendimiento */
 } 
 
 /* Modificador para el boton, se genera un diseño distinto */
@@ -23,12 +24,13 @@
 }
 
 /* Pseudoelementos para el boton cuando pase el cursos */
-
 .boton:hover {
-    background-color: var(--color-base-claro);
+    background-color: var(--color-base-claro); 
+    transform: translateY(-1px) scale(1.01); /* Se cambia la escala para el efecto de salto */
 }
 
 .boton--secundario:hover {
     color: var(--fuente-color-principal);
     border: solid 1px var(--color-base-claro);
+    transform: translateY(-1px) scale(1.01); 
 }

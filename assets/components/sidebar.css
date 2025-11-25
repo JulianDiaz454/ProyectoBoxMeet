@@ -1,7 +1,51 @@
-/* Componente para el sidebar */
+/* Componente: sidebar */
 
+/* Bloque: Estilos para la barra lateral */
 .main-sidebar {
-    padding: 2rem;
-    background-color: var(--fondo-color-sidebar);
+    background-color: rgba(0, 0, 0, 0.85    );
+    padding: var(--espaciado-mediano-alto) var(--espaciado-mediano-ancho);
     border-radius: var(--radio-bordes-contendor);
+}
+
+/* Elemento de navegación */
+.main-sidebar__nav {
+    padding-top: var(--espaciado-mediano-alto);
+    width: 100%;
+}
+
+/* Elemento de la lista de navegación */
+.main-sidebar__lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--espaciado-pequeño-alto);
+}
+
+/* Elemento de los elementos de navegación */
+.main-sidebar__elemento {
+    width: 100%;
+}
+
+/* Elemento de los enlaces de navegación */
+.main-sidebar__enlace {
+    display: flex;
+    width: 100%; 
+    color: var(--fuente-color-principal);
+    font-weight: var(--fuente-weight-base);
+    padding: var(--espaciado-mediano-alto) var(--espaciado-mediano-ancho); 
+    border-radius: var(--radio-bordes-inputs);
+    background-color: var(--fondo-color-principal); 
+    gap: 1rem;
+}
+
+/* Pseudoclase: Cambia propiedades al pasar sobre el enlace */
+.main-sidebar__enlace:hover {
+    background-color: var(--colores-morados);
+    transition: 0.2s;
+}
+
+/* Modificador para el enlace activo */
+.main-sidebar__enlace--activo {
+    background-color: var(--color-base-claro);
+    font-weight: var(--fuente-weight-titulos);
 }
