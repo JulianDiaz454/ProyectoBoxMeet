@@ -1,6 +1,7 @@
 /* Componente usado para los enlaces de control de inicio */
 
 .boton {
+  font-size: 1.2rem;
     color: var(--fuente-color-principal);
     border: 1px solid transparent;
     background-color: var(--color-fondo-enlaces);
@@ -37,7 +38,7 @@
 }
 
 /* Modificador para el boton dentro de la infowindow */
-.boton--infowindow {
+.boton--estilo-blanco {
     background-color: var(--fondos-secundarios);
     color: var(--fuente-color-secundario);
     padding-left: 2.5vw;
@@ -45,7 +46,7 @@
 }
 
 /* Pseudoelementos boton de infowindow cuando pase el cursos */
-.boton--infowindow:hover {
+.boton--estilo-blanco:hover {
     background-color: rgba(255, 255, 255, 0.9); 
     transform: translateY(-1px) scale(1.01); /* Se cambia la escala para el efecto de salto */;
 }

@@ -40,8 +40,9 @@
     --fuente-size-pequeño: 0.9rem; /* Tamaño pensado en textos de tamaño menor a la fuente raiz */
     --fuente-size-base: 16px;
     --fuente-size-h1: 2.3rem;
-    --fuente-size-h2: 2rem;
-    --fuente-size-p: 1.4rem;
+    --fuente-size-h2: 1.8rem;
+    --fuente-size-p: 1.3rem;
+    --tamaño-enlaces: 1rem;
     --fuente-size-boton: 1.2rem;
     --fuente-size-label: 1.3rem;
     --fuente-logo-footer: 1.2rem;
