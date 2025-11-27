@@ -5,7 +5,7 @@
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.5fr repeat(8, 1fr) 0.5fr;
 }
 /* Se define el espacio que usaran los contenidos */
 .pagina-main__contenido {
@@ -39,14 +39,42 @@
 .pagina-main__input {
     margin-right: var(--espaciado-pequeño-ancho);
 }
-
-.pagina-main__mapa {
+/* contenedor que tendra el mapa de geolocalización */
+.geo-mapa {
+    position: relative;
     grid-column: 2 / 12;
-    grid-row: 3 / 12;
+    grid-row: 4 / 12;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Se referencia al mapa */
+    background-image: url(../images/mapa.png);
+    background-size: cover;
+    border-radius: var(--radio-bordes-contendor);
+}
+/* contedor de infowindow y el puntero de ubicación */
+.geo-mapa__ventana {
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    gap: var(--espaciado-pequeño-alto);
+    width: 12vw;
+}
+/* estilos para la infowindow */
+.geo-mapa__ventan-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espaciado-pequeño-alto);
+    background-color: var(--fondo-color-principal );
+    width: 100%;
+    height: 10vh;
+    border-radius: var(--radio-bordes-contendor);
 }
 
-
-
+.ventana-info__titulo {
+  text-align: center;
+}
