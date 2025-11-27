@@ -1,10 +1,16 @@
 /* Componente para darle estilos a los iconos pensados en funcionalidad */
 
+/* Estilos generales para los iconos */
 .iconos {
     font-size: 2rem;
-    color: var(--fuente-color-principal);
+    color: var(--color-logo);
 }
-
-.iconos--color {
+/* Modificador: aplica estilos a el icono en el input de busqueda */
+.iconos--input-busqueda {
     color: rgba(0,0,0,0.6);
+}
+/* Modificador: aplica estilos para el icono del mapa */
+.iconos--geomapa {
+    color: var(--fondo-color-principal);
+    font-size: 2.8rem;
 }
