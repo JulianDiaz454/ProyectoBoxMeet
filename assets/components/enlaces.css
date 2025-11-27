@@ -1,0 +1,6 @@
+/* Componente para aplicar estilos a los enlaces */
+
+.enlace {
+   color: var(--fuente-color-principal);
+   font-size: var(--tamaño-enlaces);
+}
