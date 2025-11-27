@@ -17,8 +17,10 @@
 @import url(components/footer.css);
 @import url(components/iconos.css);
 @import url(components/sidebar.css);
+@import url(components/enlaces.css);
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);
 @import url(pages/login-vista.css);
 @import url(pages/principal.css);
+@import url(pages/principal-form-citas.css)
