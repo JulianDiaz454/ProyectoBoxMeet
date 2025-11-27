@@ -46,6 +46,7 @@
 
 /* Modificador para el enlace activo */
 .main-sidebar__enlace--activo {
-    background-color: var(--color-base-claro);
     font-weight: var(--fuente-weight-titulos);
+    border: solid 2px var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
 }

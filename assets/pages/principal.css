@@ -4,12 +4,12 @@
 .pagina-main--grid {
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 /* Se define el espacio que usaran los contenidos */
 .pagina-main__contenido {
-    grid-column: 1 / 12;
+    grid-column: 2 / 12;
     grid-row: 1 / 3;
 }
 /* Se define la disposición del contenido */
@@ -33,14 +33,20 @@
 /* Se aplican estilos para modificar los elementos del formulario */
 .pagina-main__formulario {
     display: flex;
-    width: 90%;
+    width: 100%;
 }
 /* Se añade propiedades específicas para el input */
 .pagina-main__input {
     margin-right: var(--espaciado-pequeño-ancho);
 }
 
-
+.pagina-main__mapa {
+    grid-column: 2 / 12;
+    grid-row: 3 / 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

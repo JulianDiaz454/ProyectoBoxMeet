@@ -20,19 +20,34 @@
         <nav class="main-sidebar__nav">
             <ul class="main-sidebar__lista">
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-house"></i> Buscar citas</a>
+                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Citas pendientes</a>
+                    <a href="#" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus citas</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i> Historial de citas</a>
+                    <a href="#" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i> Historial</a>
                 </li>
             </ul>
         </nav>
     </aside>
-    <main class="pagina-main">
+    <main class="pagina-main--grid">
+        <div class="pagina-main__contenido">
+            <h1 class="pagina-main__titulo">Encuentra el lugar ideal</h1>
+            <p class="pagina-main__texto">Encuenta algun lugar de interes, indica el nombre del establecimiento o la dirección y agenda tu cita</p>
 
+            <form class="form pagina-main__formulario">
+                <div class="form__contenedor-icon">
+                    <i class="bi bi-search form__iconos iconos--color"></i>
+                    <input type="text" class="form__input pagina-main__input">
+                </div>
+                <button type="submit" class="boton pagina-main__boton">Buscar</button>  
+            </form>
+        </div>
+        
+        <div class="pagina-main__mapa">
+            <img src="../assets/images/mapa.png" alt="Mapa" class="pagina-main__imagen-mapa">
+        </div>
     </main>
 </body>
 </html>

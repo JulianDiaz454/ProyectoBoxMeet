@@ -14,15 +14,11 @@
         ". . . .  ."
     ;
 }
-
+/* Se le asignan las areas a las secciones */
 .main-header {
     grid-area: header;
 }
 
 .main-sidebar {
     grid-area: sidebar;
-}
-
-.pagina-main {
-    grid-area: main;
 }

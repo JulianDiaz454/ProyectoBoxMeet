@@ -2,6 +2,7 @@
 
 .boton {
     color: var(--fuente-color-principal);
+    border: 1px solid transparent;
     background-color: var(--color-fondo-enlaces);
     padding: 1vh 2vw;
     font-weight: var(--fuente-weight-enlaces);

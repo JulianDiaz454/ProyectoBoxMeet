@@ -15,7 +15,9 @@
 
 /* Contendero para incorporar iconos a los inputs */
 .form__contenedor-icon {
+    display: flex;
     position: relative;
+    width: 100%;
 }
 
 .form__iconos {
