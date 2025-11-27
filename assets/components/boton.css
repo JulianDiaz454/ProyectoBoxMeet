@@ -35,3 +35,17 @@
     border: solid 1px var(--color-base-claro);
     transform: translateY(-1px) scale(1.01); 
 }
+
+/* Modificador para el boton dentro de la infowindow */
+.boton--infowindow {
+    background-color: var(--fondos-secundarios);
+    color: var(--fuente-color-secundario);
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+/* Pseudoelementos boton de infowindow cuando pase el cursos */
+.boton--infowindow:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+    transform: translateY(-1px) scale(1.01); /* Se cambia la escala para el efecto de salto */;
+}
