@@ -1,7 +1,7 @@
 /* Componente usado para los enlaces de control de inicio */
 
 .boton {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
     color: var(--fuente-color-principal);
     border: 1px solid transparent;
     background-color: var(--color-fondo-enlaces);

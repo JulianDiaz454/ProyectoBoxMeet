@@ -1,11 +1,12 @@
 /* Page para aplicar estilos especificos a la sección de formulario */
 
+/* Se declara el tamaño que toma con grid */
 .pagina-main__formulario-cita {
     grid-column: 2 / 12;
     grid-row: 4 / 12;
     display: flex;
 }
-
+/* Estilos para la sección izquierda del formulario */
 .seccion-envio {
     background-color: rgba(0,0,0,0.8);
     width: 35%;
@@ -13,7 +14,7 @@
     border-bottom-left-radius: var(--radio-bordes-contendor);
     padding: 1rem;
 }
-
+/* Se ubica el contenido de la sección izquierda */
 .seccion-envio__contenido {
     display: flex;
     width: 100%;
@@ -24,18 +25,21 @@
     gap: var(--espaciado-pequeño-alto);
 }
 
+/* Estilos para el título de la sección izquierda */
 .seccion-envio__titulo {
     font-size: var(--fuente-size-h2);
     font-weight: var(--fuente-weight-sub-titulos);
 }
-
+/* Estilos para la información de la dirección */
 .seccion-envio__direccion {
-  font-size: var(--fuente-size-p);
-  font-weight: var(--peso-bajo);
-  margin-bottom: var(--espaciado-mediano-alto);
+    font-size: var(--fuente-size-p);
+    font-weight: var(--peso-bajo);
+    margin-bottom: var(--espaciado-mediano-alto);
 }
 
+/* Estilos para la sección derecha del formulario */
 .seccion-campos {
+    color: var(--fuente-color-secundario);
     background-color: var(--fondos-secundarios);
     width: 75%;
     border-top-right-radius: var(--radio-bordes-contendor);
