@@ -12,7 +12,7 @@
     width: 35%;
     border-top-left-radius: var(--radio-bordes-contendor);
     border-bottom-left-radius: var(--radio-bordes-contendor);
-    padding: 1rem;
+    padding: var(--padding-contenedor-form);
 }
 /* Se ubica el contenido de la sección izquierda */
 .seccion-envio__contenido {
@@ -42,7 +42,167 @@
     color: var(--fuente-color-secundario);
     background-color: var(--fondos-secundarios);
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: var(--padding-contenedor-form);
     border-top-right-radius: var(--radio-bordes-contendor);
     border-bottom-right-radius: var(--radio-bordes-contendor);
 }
+/* Estilos para el elemento titulo */
+.seccion-campos__titulo {
+    font-size: var(--fuente-size-h2);
+    font-weight: var(--fuente-weight-sub-titulos);
+}
+/* Estilos para el contenido de cada grupo */
+.seccion-campos__grupo {
+    width: 100%;
+    gap: var(--espaciado-pequeño-alto);
+}
 
+/* Modificador para cambiar la disposicion de los elementos */
+.seccion-campos__grupo--disposicion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--espaciado-pequeño-ancho);
+}
+/* Estilos para identificar el contenido de cada grupo */
+.seccion-campos__etiqueta {
+    font-size: var(--fuente-size-label);
+    font-weight: var(--peso-medio-alto);
+}
+/* Estilos para el contenedor de la información del estilista */
+.seccion-campos__contenido-estilista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3F3F3;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radio-bordes-contendor);
+}
+/* Propiedades para disponer el contenedor de la información del estilista - Icono de foto de perfil y nombre */
+.seccion-campos__info-estilista {
+    display: flex;
+    gap: var(--espaciado-pequeño-ancho);
+    align-items: center;
+}
+/* Estilos para el icono */
+.seccion-campos__icono {
+    font-size: 1.5rem;
+}
+/* Estilos para el nombre del estilista */
+.seccion-campos__nombre-estilista {
+    font-weight: var(--peso-medio-bajo);
+}
+/* Estilos para el enlace que permite el cambio de estilistas */
+.seccion-campos__enlace-cambiar {
+    padding: 5px 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50px;
+    color: #d3d3d3;
+}   
+
+/* Contenedor para maneter los selects en fila*/
+.seccion-campos__contenedor-selects {
+    display: flex;
+    gap: var(--espaciado-pequeño-ancho);
+}
+
+/* Estilos para los select */
+.seccion-campos__select {
+    appearance: none; /* Resetea los estilos predeterminados del sistema, se usa para eliminar la flecha */   
+    border: 1px solid #c0c0c0; 
+    border-radius: 50px;      
+    padding: 10px 20px;      
+    font-size: 16px;         
+    color: #444;              
+    white-space: nowrap;
+    /* Estilos para la flecha colocada por medio de la imagen */
+    padding-right: 40px; 
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 18px; 
+}   
+
+/* Estilos del Contenedor de la Lista */
+.seccion-campos__contenedor-servicios {
+    /* El contenedor gris claro con esquinas redondeadas */
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-top: var(--espaciado-pequeño-alto);
+}
+
+/* Contenedor de la lista de servicios */
+.seccion-campos__contenedor-servicios {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-top: var(--espaciado-pequeño-alto);
+}
+
+/* Oculta la casilla de verificación nativa (esencial) */
+.servicio-item__checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Estilos para el label que tiene el contenido */
+.servicio-item__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+/* Eliminar borde inferior del último elemento */
+.servicio-item:last-child .servicio-item__label {
+    border-bottom: none;
+}
+
+/* Contenedor del icono de check y el nombre del servicio */
+.servicio-item__info {
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado-pequeño-ancho);
+}
+/* Da estilos a la etiqueta que remplaza el checkbox */
+.servicio-item__icono-visual {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; 
+    border: 1px solid #ccc; 
+}
+
+/* Con el pseudo-elemento after se aplica un contenido - solo se muestra con el checkbox apagado */
+.servicio-item__icono-visual::after {
+    content: "+"; 
+    color: #6d6d6d; 
+    font-size: 14px;
+    line-height: 1; /* Centra el contenido verticalmente */
+}
+
+/* Cambia el estilo para el icono visual cuando el checkbox este activo */
+.servicio-item__checkbox:checked + .servicio-item__label .servicio-item__icono-visual {
+    border-color: var(--color-checkeado); 
+    background-color: var(--color-checkeado); 
+}
+
+/* Cambia el contenido de after con el checkbox activo */
+.servicio-item__checkbox:checked + .servicio-item__label .servicio-item__icono-visual::after {
+    content: "✓"; 
+    color: white; 
+}

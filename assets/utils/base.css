@@ -13,7 +13,7 @@
     /* Bold y tipo de letra */
     --fuente-principal-body: "Red Hat Display", sans-serif; /* Tipo de letra de la pagina */
     --fuente-titulos: "Nunito", sans-serif; /* Estilo de fuente para los titulos */
-    --fuente-weight-titulos: 700;
+    --fuente-size-h2: 700;
     --fuente-weight-sub-titulos: 600;
     --fuente-weight-enlaces: 500;
     --fuente-weight-base: 200;
@@ -28,10 +28,13 @@
     --fuente-color-enlaces-claro: #d673fd;
     --color-fondo-enlaces: #7400a1;
     --fondos-secundarios: #fff;
+    --color-checkeado: #55c455;
 
     --peso-alto: 900;
-    --peso-medio: 600;
-    --peso-bajo: 300;
+    --peso-medio-alto: 600;
+    --peso-medio: 400;
+    --peso-medio-bajo: 300;
+    --peso-bajo: 200;
 
     /* Estilos para pseudoelementos */
     --color-base-claro: #90179b;
@@ -64,12 +67,13 @@
     --espaciado-grande-ancho: 40px;
 
     --espaciado-contendor: 2rem;
+    --padding-contenedor-form: 1.2rem;
 
 
     /* Bordes */
     --color-bordes: #fff;
-    --radio-bordes-contendor: 15px;
-    --radio-bordes-inputs: 20px;
+    --radio-bordes-contendor: 20px;
+    --radio-bordes-inputs: 22px;
 
     /* Estilos para los iconos */
     --colores-morados: #77008f4f;

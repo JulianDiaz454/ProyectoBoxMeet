@@ -45,99 +45,108 @@
             </form>
         </section>
         
-        <form action="" class="pagina-main__formulario-cita">
-          <section class="seccion-envio">
-              <a href="principal.html" class="enlace">Volver</a>
-              <div class="seccion-envio__contenido">
-                <h2 class="seccion-envio__titulo">Sala de belleza valeria</h2>
-                <p class="seccion-envio__direccion">Cra 7a #8B - 03</p>
-                <button class="boton boton--estilo-blanco">Agendar cita</button>
-              </div>
-          </section>
-          <section class="seccion-campos">
-              <h2>FORMULARIO DE CITAS</h2>
-              <div>
-                  <label for="" class="">Estilista que realizara el trabajo</label>
-                  <div>
-                    <i class="bi bi-person-circle"></i>
-                    <p>Vanesa Alexandra</p>
-                    <a href="">Cambiar</a>
-                  </div>    
-              </div>
-
-              <div>
-                <label for="" class="">Seleccione la fecha y hora de la cita</label>
-                <div>
-                    <select name="mes" id="mes">
-                        <option value="" disabled selected>Seleccionar mes</option>
-                        <option value="">Enero</option>
-                        <option value="">Febrero</option>
-                        <option value="">Marzo</option>
-                        <option value="">Abril</option>
-                        <option value="">Mayo</option>
-                        <option value="">Junio</option>
-                        <option value="">Julio</option>
-                        <option value="">Agosto</option>
-                        <option value="">Septiembre</option>
-                        <option value="">Octubre</option>
-                        <option value="">Noviembre</option>
-                        <option value="">Diciembre</option>
-                    </select>
-
-                    <select name="dia" id="dia">
-                        <option value="" disabled selected>Seleccionar dia</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                        <option value="">11</option>
-                        <option value="">12</option>
-                        <option value="">13</option>
-                        <option value="">14</option>
-                        <option value="">15</option>
-                        <option value="">16</option>
-                        <option value="">17</option>
-                        <option value="">18</option>
-                        <option value="">19</option>
-                        <option value="">20</option>
-                        <option value="">21</option>
-                        <option value="">22</option>
-                        <option value="">23</option>
-                        <option value="">24</option>
-                        <option value="">25</option>
-                        <option value="">26</option>
-                        <option value="">27</option>
-                        <option value="">28</option>
-                        <option value="">29</option>
-                        <option value="">30</option>
-                    </select>
-
-                    <select name="hora" id="hora">
-                        <option value="" disabled selected>Seleccionar hora</option>
-                        <option value="">10:00 A.M</option>
-                        <option value="">11:00 A.M</option>
-                        <option value="">12:00 P.M</option>
-                        <option value="">01:00 P.M</option>
-                        <option value="">02:00 P.M</option>
-                        <option value="">03:00 P.M</option>
-                        <option value="">04:00 P.M</option>
-                        <option value="">05:00 P.M</option>
-                        <option value="">06:00 P.M</option>
-                    </select>
+        <form action="" class="form pagina-main__formulario-cita">
+            <section class="seccion-envio">
+                <a href="principal.html" class="enlace">Volver</a>
+                <div class="seccion-envio__contenido">
+                    <h2 class="seccion-envio__titulo">Sala de belleza valeria</h2>
+                    <p class="seccion-envio__direccion">Cra 7a #8B - 03</p>
+                    <button class="boton boton--estilo-blanco">Agendar cita</button>
                 </div>
-              </div>
+            </section>
+            <section class="seccion-campos">
+                <h2 class="seccion-campos__titulo">FORMULARIO DE CITAS</h2>
+                <div class="form__grupo seccion-campos__grupo">
+                    <h3 class="seccion-campos__etiqueta">Estilista que realiza el trabajo</h3>
+                    <div class="seccion-campos__contenido-estilista"> 
+                        <div class="seccion-campos__info-estilista">
+                            <i class="bi bi-person-circle seccion-campos__icono"></i>
+                            <p class="seccion-campos__nombre-estilista">Vanesa Alexandra</p>
+                        </div>
+                        <a href="" class="seccion-campos__enlace-cambiar">Cambiar</a>
+                    </div>
+                </div>
+                <div class="form__grupo seccion-campos__grupo">
+                    <h3 class="seccion-campos__etiqueta">Seleccione la fecha y hora de la cita</h3>
+                    <div class="seccion-campos__contenedor-selects">
+                        <select name="mes" id="mes" class="seccion-campos__select">
+                            <option value="" disabled selected>Seleccionar mes</option>
+                            <option value="">Enero</option>
+                            <option value="">Febrero</option>
+                            <option value="">Marzo</option>
+                            <option value="">Abril</option>
+                            <option value="">Mayo</option>
+                            <option value="">Junio</option>
+                            <option value="">Julio</option>
+                            <option value="">Agosto</option>
+                            <option value="">Septiembre</option>
+                            <option value="">Octubre</option>
+                            <option value="">Noviembre</option>
+                            <option value="">Diciembre</option>
+                        </select>
 
-              <div>
-                <label for="">Seleccione los servicios a realizar</label>
-                <div></div>
-              </div>
-          </section>
+                        <select name="dia" id="dia" class="seccion-campos__select seccion-campos__select--dia">
+                            <option value="" disabled selected>Seleccionar dia</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">...</option>
+                            <option value="">30</option>
+                        </select>
+
+                        <select name="hora" id="hora" class="seccion-campos__select seccion-campos__select--hora">
+                            <option value="" disabled selected>Seleccionar hora</option>
+                            <option value="">10:00 A.M</option>
+                            <option value="">11:00 A.M</option>
+                            <option value="">12:00 P.M</option>
+                            <option value="">01:00 P.M</option>
+                            <option value="">06:00 P.M</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__grupo seccion-campos__grupo">
+                    <h3 class="seccion-campos__etiqueta">Seleccione los servicios a realizar</h3>                 
+                    <div class="seccion-campos__contenedor-servicios">                
+                        <div class="servicio-item">
+                            <input type="checkbox" id="servicio-keratina" name="servicio-keratina" class="servicio-item__checkbox">
+                            <label for="servicio-keratina" class="servicio-item__label">
+                                <div class="servicio-item__info">
+                                    <span class="servicio-item__icono-visual"></span>
+                                    <p class="servicio-item__nombre">Keratina</p>
+                                </div>
+                                <p class="servicio-item__costo">100.000 COP</p>
+                            </label>
+                        </div>
+
+                        <div class="servicio-item">
+                            <input type="checkbox" id="servicio-peinado" name="servicio-peinado" class="servicio-item__checkbox" checked>
+                            <label for="servicio-peinado" class="servicio-item__label">
+                                <div class="servicio-item__info">
+                                    <span class="servicio-item__icono-visual"></span>
+                                    <p class="servicio-item__nombre">Peinado sencillo</p>
+                                </div>
+                                <p class="servicio-item__costo">40.000 COP</p>
+                            </label>
+                        </div>
+                        <div class="servicio-item">
+                            <input type="checkbox" id="servicio-balayage" name="servicio-balayage" class="servicio-item__checkbox" checked> 
+                            <label for="servicio-balayage" class="servicio-item__label">
+                                <div class="servicio-item__info">
+                                    <span class="servicio-item__icono-visual"></span> 
+                                    <p class="servicio-item__nombre">Balayage</p>
+                                </div>
+                                <p class="servicio-item__costo">150.000 COP</p>
+                            </label>
+                        </div>            
+                    </div>
+                </div>
+
+                <div class="form__grupo seccion-campos__grupo seccion-campos__grupo--disposicion">
+                    <h3 class="seccion-campos__etiqueta">Costo total </h3>
+                    <p class="seccion-campos__costo-total">00.00 COP</p>
+                </div>
+            </section>
         </form>
     </main>
 </body>
