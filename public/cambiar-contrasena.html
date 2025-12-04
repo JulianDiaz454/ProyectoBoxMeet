@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
-    <title>Iniciar Sesión</title>
+    <title>Cambio de contraseña</title>
 </head>
 <body>
     <header class="main-header">
@@ -15,10 +15,10 @@
     <main class="pagina-main">
         <div class="index-fondo"></div>
         <div class="tarjeta-login">
-            <h2 class="tarjeta-login__titulo">Iniciar sesión</h2>
+            <h2 class="tarjeta-login__titulo">Cambiar contraseña</h2>
             <form class="form form--disposicion">
                 <div class="form__grupo">
-                    <label for="correo_login" class="form__label">Correo electronico</label>
+                    <label for="correo_login" class="form__label">Nueva contraseña</label>
                     <div class="form__contenedor-icon">
                         <i class="bi bi-envelope-fill form__iconos"></i>
                         <input class="form__input" type="email" name="correo_usuario" id="correo_login" required>
@@ -26,19 +26,13 @@
                 </div>
 
                 <div class="form__grupo">
-                    <label for="contraseña_login" class="form__label">Contraseña</label>
+                    <label for="contraseña_login" class="form__label">Confirmar contraseña</label>
                     <div class="form__contenedor-icon">
                         <i class="bi bi-lock-fill form__iconos"></i>
                         <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login" required>
                     </div>
                 </div>
-
-                <div class="form__grupo form__grupo--disposicion">
-                    <a href="recuperar-contrasena.html" class="tarjeta-login__enlace-ayuda">¿Olvidates tu contraseña?</a>
-                    <a href="../public/registro.html" class="tarjeta-login__enlace-ayuda">¿No tienes cuenta?</a>
-                </div>
-
-                <button class="boton boton--form">Iniciar sesión</button>
+                <button class="boton boton--form">Cambiar contraseña</button>
             </form>
         </div>
     </main>

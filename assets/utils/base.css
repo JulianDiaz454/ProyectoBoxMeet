@@ -14,6 +14,7 @@
     --fuente-principal-body: "Red Hat Display", sans-serif; /* Tipo de letra de la pagina */
     --fuente-titulos: "Nunito", sans-serif; /* Estilo de fuente para los titulos */
     --fuente-size-h2: 700;
+    --fuente-weight-titulos: 700;
     --fuente-weight-sub-titulos: 600;
     --fuente-weight-enlaces: 500;
     --fuente-weight-base: 200;
@@ -58,7 +59,7 @@
     --espaciado-header-width: 5vh;
 
     --espaciado-pequeño-ancho: 15px;
-    --espaciado-pequeño-alto: 8px;
+    --espaciado-pequeño-alto: 10px;
 
     --espaciado-mediano-alto: 15px;
     --espaciado-mediano-ancho: 22px;

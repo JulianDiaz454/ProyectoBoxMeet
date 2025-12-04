@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
-    <title>Iniciar Sesión</title>
+    <title>Recuperar contraseña</title>
 </head>
 <body>
     <header class="main-header">
@@ -15,30 +15,16 @@
     <main class="pagina-main">
         <div class="index-fondo"></div>
         <div class="tarjeta-login">
-            <h2 class="tarjeta-login__titulo">Iniciar sesión</h2>
+            <h2 class="tarjeta-login__titulo">Recuperar contraseña</h2>
             <form class="form form--disposicion">
+                <span class="form__info">Escriba el e-mail de su cuenta</span>
                 <div class="form__grupo">
-                    <label for="correo_login" class="form__label">Correo electronico</label>
                     <div class="form__contenedor-icon">
                         <i class="bi bi-envelope-fill form__iconos"></i>
                         <input class="form__input" type="email" name="correo_usuario" id="correo_login" required>
                     </div>
                 </div>
-
-                <div class="form__grupo">
-                    <label for="contraseña_login" class="form__label">Contraseña</label>
-                    <div class="form__contenedor-icon">
-                        <i class="bi bi-lock-fill form__iconos"></i>
-                        <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login" required>
-                    </div>
-                </div>
-
-                <div class="form__grupo form__grupo--disposicion">
-                    <a href="recuperar-contrasena.html" class="tarjeta-login__enlace-ayuda">¿Olvidates tu contraseña?</a>
-                    <a href="../public/registro.html" class="tarjeta-login__enlace-ayuda">¿No tienes cuenta?</a>
-                </div>
-
-                <button class="boton boton--form">Iniciar sesión</button>
+                <a href="codigo-recuperacion.html" class="boton boton--form">Enviar codigo</a>
             </form>
         </div>
     </main>
@@ -49,7 +35,6 @@
                 <p class="main-footer__logo">GeoVan</p>
                 <p class="main-footer__derechos">Colombia, Derechos reservados a Julian Diaz</p>
             </div>
- 
             <nav class="main-footer__seccion">
                 <h4 class="main-footer__titulo">Legal y Ayuda</h4>
                 <ul class="main-footer__lista">

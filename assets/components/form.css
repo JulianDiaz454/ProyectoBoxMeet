@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+/* Elemento: Da estilos a la etiqueta span de contenido */
+.form__info {
+    font-size: var(--fuente-size-p);
+}
+
 /* Elemento: Da estilos a cada grupo de label e input */
 .form__grupo {
     display: flex;
