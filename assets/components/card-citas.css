@@ -1,0 +1,54 @@
+/* Componente: Cards de información con sus citas */
+
+.card-citas {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-pequeño-alto);
+
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-mediano-ancho);
+    border: 2px solid var(--color-bordes-card-pendiente);
+    background-color: var(--fondo-color-principal);
+    border-radius: var(--radio-bordes-cards);
+    border-right: 2vw solid var(--color-bordes-card-pendiente);
+
+    width: 85%;
+    height: 12vh;
+}
+
+.card-citas__titulo {
+    font-size: var(--fuente-size-h3);
+}
+
+.card-citas__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-citas__informacion {
+    display: flex;
+    gap: var(--espaciado-pequeño-ancho);
+}
+
+.card-citas__clave {
+    font-weight: var(--peso-medio);
+    font-size: var(--fuente-size-p);
+}
+
+.card-citas__valor {
+    font-weight: var(--peso-bajo);
+    font-size: var(--fuente-size-p);
+}
+
+.card-citas__detalles {
+    padding: 5px 20px;
+    border-radius: var(--radio-bordes-bajo);
+    border: 1px solid var(--fuente-color-enlaces);
+    background-color: rgba(116, 0, 161, 0.1);
+    color: var(--fuente-color-enlaces-claro);
+}
+
+.card-citas__detalles:hover {
+    transition: 0.3s;
+    background-color: rgba(116, 0, 161, 0.5);
+}

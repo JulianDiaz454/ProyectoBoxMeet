@@ -26,7 +26,7 @@
     --fuente-color-principal: #fff;
     --fuente-color-secundario: #000;
     --fuente-color-enlaces: #7400a1;
-    --fuente-color-enlaces-claro: #d673fd;
+    --fuente-color-enlaces-claro: #b853e0;
     --color-fondo-enlaces: #7400a1;
     --fondos-secundarios: #fff;
     --color-checkeado: #55c455;
@@ -45,7 +45,8 @@
     --fuente-size-base: 16px;
     --fuente-size-h1: 2.3rem;
     --fuente-size-h2: 1.8rem;
-    --fuente-size-p: 1.3rem;
+    --fuente-size-h3: 1.5rem;
+    --fuente-size-p: 1.1rem;
     --tamaño-enlaces: 1rem;
     --fuente-size-boton: 1.2rem;
     --fuente-size-label: 1.3rem;
@@ -73,7 +74,10 @@
 
     /* Bordes */
     --color-bordes: #fff;
+    --color-bordes-card-pendiente: #5E0002;
+    --radio-bordes-bajo: 15px;
     --radio-bordes-contendor: 20px;
+    --radio-bordes-cards: 30px;
     --radio-bordes-inputs: 22px;
 
     /* Estilos para los iconos */
