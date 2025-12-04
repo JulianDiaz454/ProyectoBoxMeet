@@ -75,6 +75,7 @@
     /* Bordes */
     --color-bordes: #fff;
     --color-bordes-card-pendiente: #5E0002;
+    --color-bordes-card-terminada: #16351A;
     --radio-bordes-bajo: 15px;
     --radio-bordes-contendor: 20px;
     --radio-bordes-cards: 30px;

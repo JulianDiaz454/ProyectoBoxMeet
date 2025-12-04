@@ -1,11 +1,11 @@
 /* Componente usado para los enlaces de control de inicio */
 
 .boton {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--fuente-color-principal);
     border: 1px solid transparent;
     background-color: var(--color-fondo-enlaces);
-    padding: 1vh 2vw;
+    padding: 1vh 1.8vw;
     font-weight: var(--fuente-weight-enlaces);
     border-radius: 30px;
     transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades */
