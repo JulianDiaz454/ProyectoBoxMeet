@@ -22,7 +22,7 @@
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);
-@import url(pages/login-vista.css);
+@import url(pages/login-vista.css); 
 @import url(pages/principal.css);
 @import url(pages/principal-form-citas.css);
 @import url(pages/tus-citas.css);

@@ -12,7 +12,7 @@
     border-radius: var(--radio-bordes-cards);
     border-right: 2vw solid var(--color-bordes-card-pendiente);
 
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 /* Elemento: Estilos para el titulo */
@@ -31,6 +31,10 @@
     gap: var(--espaciado-pequeño-alto);
     align-items: start;
     width: 30%;
+}
+/* Se cambia la alineación de los itemas de la columna del inicio al final */
+.card-citas__column--alineacion {
+    align-items: end;
 }
 /* Elemento: Contenedor de los elementos de información */
 .card-citas__informacion {
