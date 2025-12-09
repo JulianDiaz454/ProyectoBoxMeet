@@ -11,7 +11,8 @@
 /* Estilos para el elemento del logo*/
 .main-header__logo {
     font-size: var(--fuente-size-h1);
-    font-weight: var(--fuente-weight-titulos); 
+    font-weight: var(--fuente-weight-titulos);
+    color: var(--color-logo); 
 }
 
 /* Estilos para la etiqueta nav */
