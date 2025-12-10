@@ -3,16 +3,24 @@
 .main-header {
     /* Propiedades para ubicar los elementos */
     display: flex;
-    justify-content: space-between; 
-    padding: var(--espaciado-header-height) var(--espaciado-header-width); 
-    align-items: center; 
+    justify-content: space-between;
+    padding: var(--espaciado-header-height) var(--espaciado-header-width);
+    align-items: center;
+}
+
+/* Modifier para header fijo */
+.main-header--fijo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Estilos para el elemento del logo*/
 .main-header__logo {
     font-size: var(--fuente-size-h1);
     font-weight: var(--fuente-weight-titulos);
-    color: var(--color-logo); 
+    color: var(--color-logo);
 }
 
 /* Estilos para la etiqueta nav */
