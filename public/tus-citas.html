@@ -11,11 +11,17 @@
 </head>
 
 <body class="body-principal">
+    <input type="checkbox" id="sidebar-active" class="sidebar-trigger">
     <input type="checkbox" id="activador-modal" class="ventana-emergente__activador">
 
     <div class="index-fondo"></div>
     <header class="main-header">
-        <h1 class="main-header__logo">GeoVan</h1>
+        <div class="main-header__start">
+            <label for="sidebar-active" class="hamburger-menu">
+                <i class="bi bi-list"></i>
+            </label>
+            <h1 class="main-header__logo">GeoVan</h1>
+        </div>
         <nav class="main-header__nav">
             <a href="#" class="boton">Ofrece tus servicios</a>
             <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i

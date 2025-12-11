@@ -1,0 +1,500 @@
+/* Archivo de estilos responsivos para tablet y mobile */
+
+/* ============================================
+   ESTILOS BASE PARA HAMBURGER MENU
+   ============================================ */
+
+/* Ocultar el checkbox trigger */
+.sidebar-trigger {
+    display: none;
+}
+
+/* Hamburger menu - oculto por defecto en desktop */
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    color: var(--fuente-color-principal);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger-menu:hover {
+    color: var(--fuente-color-enlaces);
+}
+
+/* Contenedor para logo y hamburger */
+.main-header__start {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ============================================
+   MEDIA QUERY: TABLET Y MOBILE (max-width: 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+
+    /* Mostrar hamburger menu */
+    .hamburger-menu {
+        display: block !important;
+    }
+
+    /* Ajustar grid layout para remover columna del sidebar */
+    .body-principal {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto 1fr !important;
+        grid-template-areas:
+            "header"
+            "main"
+            !important;
+    }
+
+    /* Header ajustes */
+    .main-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .main-header__logo {
+        font-size: 1.5rem;
+    }
+
+    .main-header__nav {
+        gap: 0.5rem;
+    }
+
+    /* Sidebar - off-canvas por defecto */
+    .main-sidebar {
+        position: fixed !important;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+        overflow-y: auto;
+    }
+
+    /* Mostrar sidebar cuando checkbox está activado */
+    .sidebar-trigger:checked~.main-sidebar {
+        left: 0 !important;
+    }
+
+    /* Overlay cuando sidebar está abierto */
+    .sidebar-trigger:checked~.index-fondo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    /* Ajustar contenido principal */
+    .contenido-principal {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .contenido-principal__titulo {
+        font-size: 1.5rem;
+    }
+
+    /* Card citas - ajustes para tablet */
+    .card-citas {
+        width: 95%;
+    }
+
+    .card-citas__contenido {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-citas__column {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .card-citas__column--alineacion {
+        align-items: flex-start;
+    }
+
+    .card-citas__detalles-box {
+        width: 100%;
+    }
+
+    .card-citas__lista-servicios {
+        width: 100%;
+    }
+
+    .card-citas__item-servicio {
+        width: 100%;
+    }
+
+    .card-citas__total {
+        width: 100%;
+    }
+
+    .card-citas__botones-accion {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    /* Botones */
+    .boton {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Página principal (principal.html) */
+    .pagina-main--grid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto !important;
+    }
+
+    .geo-mapa {
+        height: 400px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY: MOBILE (max-width: 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Header más compacto */
+    .main-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .main-header__logo {
+        font-size: 1.3rem;
+    }
+
+    .main-header__nav {
+        gap: 0.3rem;
+    }
+
+    /* Ocultar botón "Ofrece tus servicios" en mobile para páginas con sidebar */
+    .body-principal .main-header__nav .boton {
+        display: none;
+    }
+
+    /* Sidebar más estrecho en mobile */
+    .main-sidebar {
+        width: 250px;
+    }
+
+    /* Contenido principal */
+    .contenido-principal {
+        padding: 0.75rem;
+    }
+
+    .contenido-principal__titulo {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+
+    .contenido-principal__citas {
+        width: 100%;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* Card citas - mobile */
+    .card-citas {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .card-citas__titulo {
+        font-size: 1.2rem;
+    }
+
+    .card-citas__contenido {
+        gap: 0.75rem;
+    }
+
+    .card-citas__informacion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .card-citas__clave,
+    .card-citas__valor {
+        font-size: 0.95rem;
+    }
+
+    .card-citas__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-citas__botones-accion {
+        width: 100%;
+    }
+
+    .card-citas__btn--cancelar {
+        width: 100%;
+    }
+
+    /* Modal perfil */
+    .modal-perfil__contenido {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Ventana emergente */
+    .ventana-emergente__contenido {
+        width: 90%;
+        max-width: 350px;
+        padding: 1.5rem;
+    }
+
+    .ventana-emergente__titulo {
+        font-size: 1.2rem;
+    }
+
+    /* Iconos */
+    .iconos {
+        font-size: 1.5rem;
+    }
+
+    /* ============================================
+       ESTILOS PARA INDEX.HTML - MANTENER BOTONES EN LÍNEA
+       ============================================ */
+
+    /* Header del index - mantener horizontal */
+    .pagina-principal .main-header {
+        padding: 1rem;
+    }
+
+    .pagina-principal .main-header__logo {
+        font-size: 1.3rem;
+    }
+
+    .pagina-principal .main-header__nav {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .pagina-principal .main-header__nav .boton {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* Hero section */
+    .seccion-hero {
+        padding: 1.5rem 1rem;
+        max-width: 100%;
+    }
+
+    .seccion-hero__titulo {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .seccion-hero__parrafo {
+        font-size: 1rem;
+    }
+
+    .seccion-hero__cta-titulo {
+        font-size: 0.95rem;
+    }
+
+    .form--hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__input {
+        width: 100%;
+    }
+
+    .boton--form {
+        width: 100%;
+    }
+
+    /* Footer responsive */
+    .main-footer__contenido {
+        padding: 1.5rem 1rem;
+    }
+
+    .main-footer__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .main-footer__lista li {
+        border-right: none !important;
+        padding-right: 0 !important;
+    }
+
+    .main-footer__enlace {
+        font-size: 0.9rem;
+    }
+
+    .main-footer__derechos {
+        font-size: 0.85rem;
+        padding-bottom: 0.75rem;
+    }
+
+    /* Página principal (principal.html) */
+    .pagina-main__contenido {
+        padding: 1.5rem 1rem;
+    }
+
+    .pagina-main__titulo {
+        font-size: 1.5rem;
+    }
+
+    .pagina-main__texto {
+        font-size: 1rem;
+    }
+
+    .pagina-main__formulario {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .form__contenedor-icon {
+        width: 100%;
+    }
+
+    .pagina-main__boton {
+        width: 100%;
+    }
+
+    .geo-mapa {
+        height: 350px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY: MOBILE PEQUEÑO (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+
+    /* Header ultra compacto */
+    .main-header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .main-header__logo {
+        font-size: 1.1rem;
+    }
+
+    /* Sidebar aún más estrecho */
+    .main-sidebar {
+        width: 220px;
+    }
+
+    /* Contenido principal */
+    .contenido-principal__titulo {
+        font-size: 1.1rem;
+    }
+
+    /* Card citas - mobile pequeño */
+    .card-citas {
+        padding: 0.75rem;
+    }
+
+    .card-citas__titulo {
+        font-size: 1.1rem;
+    }
+
+    .card-citas__clave,
+    .card-citas__valor {
+        font-size: 0.9rem;
+    }
+
+    .card-citas__subtitulo {
+        font-size: 1rem;
+    }
+
+    /* Botones más pequeños */
+    .card-citas__btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* Modal y ventana emergente */
+    .modal-perfil__contenido,
+    .ventana-emergente__contenido {
+        width: 95%;
+    }
+
+    .ventana-emergente__titulo {
+        font-size: 1.1rem;
+    }
+
+    /* ============================================
+       INDEX.HTML - MOBILE PEQUEÑO - MANTENER HORIZONTAL
+       ============================================ */
+
+    .pagina-principal .main-header {
+        padding: 0.75rem;
+    }
+
+    .pagina-principal .main-header__logo {
+        font-size: 1.2rem;
+    }
+
+    .pagina-principal .main-header__nav {
+        gap: 0.4rem;
+    }
+
+    .pagina-principal .main-header__nav .boton {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .seccion-hero__titulo {
+        font-size: 1.2rem;
+    }
+
+    .seccion-hero__parrafo {
+        font-size: 0.9rem;
+    }
+
+    .seccion-hero__cta-titulo {
+        font-size: 0.85rem;
+    }
+
+    /* Footer - mobile pequeño */
+    .main-footer__contenido {
+        padding: 1rem;
+    }
+
+    .main-footer__enlace {
+        font-size: 0.85rem;
+    }
+
+    .main-footer__derechos {
+        font-size: 0.8rem;
+    }
+
+    .main-footer__titulo {
+        font-size: 1rem;
+    }
+
+    /* Página principal */
+    .pagina-main__titulo {
+        font-size: 1.3rem;
+    }
+
+    .pagina-main__texto {
+        font-size: 0.9rem;
+    }
+
+    .geo-mapa {
+        height: 300px;
+    }
+}
