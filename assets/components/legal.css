@@ -1,6 +1,6 @@
-/* Componente:  */
+/* Componente: Se utilizara para dar estilos a los contenidos de información */
 
-.terminos {
+.legal {
     max-width: 1050px;
     margin: 0 auto;
     padding: 2rem;
@@ -8,7 +8,7 @@
 }
 
 /* Estilo del titulo principal */
-.terminos__titulo {
+.legal__titulo {
     font-size: var(--fuente-size-h2);
     color: var(--fuente-color-principal);
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 /* Estilo de los subtitulos */
-.terminos__subtitulo {
+.legal__subtitulo {
     font-size: var(--fuente-size-h3);
     color: var(--fuente-color-principal);
     margin-top: 1.5rem;
@@ -24,7 +24,7 @@
 }
 
 /* Estilo de los parrafos */
-.terminos__parrafo {
+.legal__parrafo {
     font-size: var(--fuente-size-p);
     color: var(--fuente-color-principal);
     line-height: 1.2;
@@ -33,7 +33,7 @@
 }
 
 /* Estilo de las listas */
-.terminos__lista {
+.legal__lista {
     list-style-type: disc;
     padding-left: 1.5rem;
     margin-bottom: 1rem;
@@ -41,7 +41,7 @@
 }
 
 /* Estilo de los items de lista */
-.terminos__item {
+.legal__item {
     font-size: var(--fuente-size-p);
     color: var(--fuente-color-principal);
     line-height: 1.1;

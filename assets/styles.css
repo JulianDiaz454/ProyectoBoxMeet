@@ -23,7 +23,7 @@
 @import url(components/sidebar.css);
 @import url(components/enlaces.css);
 @import url(components/card-citas.css);
-@import url(components/terminos.css);
+@import url(components/legal.css);
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);
