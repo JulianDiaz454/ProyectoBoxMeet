@@ -21,7 +21,7 @@
             <h1 class="main-header__logo">GeoVan</h1>
         </div>
         <nav class="main-header__nav">
-            <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
+            <label for="btn-modal-perfil" class="main-header__enlaces"><i
                     class="bi bi-person-circle iconos"></i></label>
         </nav>
     </header>
@@ -49,27 +49,31 @@
             <h2 class="contenido-principal__titulo">Historial de citas</h2>
             <div class="contenido-principal__citas">
 
-                <article class="card-historial-negocio">
-                    <h3 class="card-historial-negocio__titulo">Sala de belleza valeria</h3>
-
-                    <div class="card-historial-negocio__grid">
-                        <span class="card-historial-negocio__dato">
-                            <strong>Fecha de fin :</strong> 11 - 29 / 2:00 pm
-                        </span>
-
-                        <span class="card-historial-negocio__dato">
-                            <strong>Estilista :</strong> Vanesa alexandra
-                        </span>
-
-                        <span class="card-historial-negocio__dato">
-                            <strong>Total pagado :</strong> 190.000 COP
-                        </span>
-
-                        <span class="card-historial-negocio__dato">
-                            <strong>Metodo de pago :</strong> Efectivo
-                        </span>
+                <div class="card-citas card-citas--finalizadas">
+                    <h3 class="card-citas__titulo">Sala de belleza valeria</h3>
+                    <div class="card-citas__contenido">
+                        <div class="card-citas__column">
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Fecha / Hora:</span>
+                                <span class="card-citas__valor">11 - 29 / 2:00 pm</span>
+                            </div>
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Total pagado:</span>
+                                <span class="card-citas__valor">190.000 COP</span>
+                            </div>
+                        </div>
+                        <div class="card-citas__column">
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Estilista:</span>
+                                <span class="card-citas__valor">Vanesa alexandra</span>
+                            </div>
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Metodo de pago:</span>
+                                <span class="card-citas__valor">Efectivo</span>
+                            </div>
+                        </div>
                     </div>
-                </article>
+                </div>
 
             </div>
         </section>
