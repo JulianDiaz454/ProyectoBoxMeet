@@ -1,0 +1,51 @@
+/* Archivo que genera los estilos para la pagina contactanos.html */
+
+/* Estilos para el contenedor principal de la pagina */
+.contactanos-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--fuente-color-principal);
+}
+
+/* Estilos para el titulo y descripcion */
+.contactanos__header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.contactanos__titulo {
+    font-size: var(--fuente-size-h1);
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.contactanos__descripcion {
+    font-size: var(--fuente-size-p);
+    line-height: 1.3;
+}
+
+/* Estilos para la tarjeta del formulario */
+.tarjeta-contacto {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1.5rem;
+    border-radius: var(--radio-bordes-contendor);
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 1rem;
+}
+
+/* Ajustes especificos para el formulario de contacto */
+.form--contacto {
+    width: 100%;
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
