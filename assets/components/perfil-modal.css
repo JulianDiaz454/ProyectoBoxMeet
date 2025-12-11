@@ -1,0 +1,119 @@
+/* Componente: Modal de Perfil (Cerrar Sesión) */
+
+/* Checkbox oculto */
+.modal-perfil__activador {
+    display: none;
+}
+
+/* Fondo invisible para detectar clicks fuera y cerrar */
+.modal-perfil__fondo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    cursor: default;
+}
+
+/* Contenedor del modal */
+.modal-perfil__contenido {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: #000000;
+    border-radius: 12px;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    border: 1px solid #333;
+    animation: fadeIn 0.2s ease-out;
+}
+
+/* Mostrar cuando el checkbox esta marcado */
+.modal-perfil__activador:checked~.modal-perfil .modal-perfil__fondo,
+.modal-perfil__activador:checked~.modal-perfil .modal-perfil__contenido {
+    display: flex;
+}
+
+/* Imagen de perfil */
+.modal-perfil__img-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #cce0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.modal-perfil__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nombre de usuario */
+.modal-perfil__nombre {
+    font-family: var(--fuente-titulos, sans-serif);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+/* Divisor */
+.modal-perfil__divisor {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    border: none;
+    margin: 0.5rem 0;
+}
+
+/* Boton Cerrar Sesion */
+.modal-perfil__logout {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #888;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.modal-perfil__logout:hover {
+    color: #ffffff;
+}
+
+.modal-perfil__logout i {
+    font-size: 1.3rem;
+}
+
+/* Animacion simple */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

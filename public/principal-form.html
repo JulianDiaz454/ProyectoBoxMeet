@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,31 @@
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
     <title>Pagina principal</title>
 </head>
+
 <body class="body-principal">
     <div class="index-fondo"></div>
     <header class="main-header">
         <h1 class="main-header__logo">GeoVan</h1>
         <nav class="main-header__nav">
             <a href="#" class="boton">Ofrece tus servicios</a>
-            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+            <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
+                    class="bi bi-person-circle iconos"></i></label>
         </nav>
     </header>
     <aside class="main-sidebar">
         <nav class="main-sidebar__nav">
             <ul class="main-sidebar__lista">
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-house"></i> Inicio</a>
+                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-house"></i>
+                        Inicio</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus citas</a>
+                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus
+                        citas</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i> Historial</a>
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
                 </li>
             </ul>
         </nav>
@@ -34,17 +40,18 @@
     <main class="pagina-main--grid">
         <section class="pagina-main__contenido">
             <h1 class="pagina-main__titulo">Encuentra el lugar ideal</h1>
-            <p class="pagina-main__texto">Encuenta algun lugar de interes, indica el nombre del establecimiento o la dirección y agenda tu cita</p>
+            <p class="pagina-main__texto">Encuenta algun lugar de interes, indica el nombre del establecimiento o la
+                dirección y agenda tu cita</p>
 
             <form class="form pagina-main__formulario">
                 <div class="form__contenedor-icon">
                     <i class="bi bi-search form__iconos iconos--input-busqueda"></i>
                     <input type="text" class="form__input pagina-main__input">
                 </div>
-                <button type="submit" class="boton pagina-main__boton">Buscar</button>  
+                <button type="submit" class="boton pagina-main__boton">Buscar</button>
             </form>
         </section>
-        
+
         <form action="" class="form pagina-main__formulario-cita">
             <section class="seccion-envio">
                 <a href="principal.html" class="enlace">Volver</a>
@@ -58,7 +65,7 @@
                 <h2 class="seccion-campos__titulo">FORMULARIO DE CITAS</h2>
                 <div class="form__grupo seccion-campos__grupo">
                     <h3 class="seccion-campos__etiqueta">Estilista que realiza el trabajo</h3>
-                    <div class="seccion-campos__contenido-estilista"> 
+                    <div class="seccion-campos__contenido-estilista">
                         <div class="seccion-campos__info-estilista">
                             <i class="bi bi-person-circle seccion-campos__icono"></i>
                             <p class="seccion-campos__nombre-estilista">Vanesa Alexandra</p>
@@ -106,10 +113,11 @@
                 </div>
 
                 <div class="form__grupo seccion-campos__grupo">
-                    <h3 class="seccion-campos__etiqueta">Seleccione los servicios a realizar</h3>                 
-                    <div class="seccion-campos__contenedor-servicios">                
+                    <h3 class="seccion-campos__etiqueta">Seleccione los servicios a realizar</h3>
+                    <div class="seccion-campos__contenedor-servicios">
                         <div class="servicio-item">
-                            <input type="checkbox" id="servicio-keratina" name="servicio-keratina" class="servicio-item__checkbox">
+                            <input type="checkbox" id="servicio-keratina" name="servicio-keratina"
+                                class="servicio-item__checkbox">
                             <label for="servicio-keratina" class="servicio-item__label">
                                 <div class="servicio-item__info">
                                     <span class="servicio-item__icono-visual"></span>
@@ -120,7 +128,8 @@
                         </div>
 
                         <div class="servicio-item">
-                            <input type="checkbox" id="servicio-peinado" name="servicio-peinado" class="servicio-item__checkbox" checked>
+                            <input type="checkbox" id="servicio-peinado" name="servicio-peinado"
+                                class="servicio-item__checkbox" checked>
                             <label for="servicio-peinado" class="servicio-item__label">
                                 <div class="servicio-item__info">
                                     <span class="servicio-item__icono-visual"></span>
@@ -130,15 +139,16 @@
                             </label>
                         </div>
                         <div class="servicio-item">
-                            <input type="checkbox" id="servicio-balayage" name="servicio-balayage" class="servicio-item__checkbox" checked> 
+                            <input type="checkbox" id="servicio-balayage" name="servicio-balayage"
+                                class="servicio-item__checkbox" checked>
                             <label for="servicio-balayage" class="servicio-item__label">
                                 <div class="servicio-item__info">
-                                    <span class="servicio-item__icono-visual"></span> 
+                                    <span class="servicio-item__icono-visual"></span>
                                     <p class="servicio-item__nombre">Balayage</p>
                                 </div>
                                 <p class="servicio-item__costo">150.000 COP</p>
                             </label>
-                        </div>            
+                        </div>
                     </div>
                 </div>
 
@@ -149,5 +159,22 @@
             </section>
         </form>
     </main>
+
+    <input type="checkbox" id="btn-modal-perfil" class="modal-perfil__activador">
+    <div class="modal-perfil">
+        <label for="btn-modal-perfil" class="modal-perfil__fondo"></label>
+        <div class="modal-perfil__contenido">
+            <div class="modal-perfil__img-container">
+                <img src="../assets/images/usuario.png" alt="Perfil" class="modal-perfil__img">
+            </div>
+            <h3 class="modal-perfil__nombre">Julián Andrés Diaz</h3>
+            <hr class="modal-perfil__divisor">
+            <a href="login.html" class="modal-perfil__logout">
+                <i class="bi bi-box-arrow-right"></i>
+                Cerrar sesión
+            </a>
+        </div>
+    </div>
 </body>
+
 </html>

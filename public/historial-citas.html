@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,15 @@
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
     <title>Tus citas</title>
 </head>
+
 <body class="body-principal">
     <div class="index-fondo"></div>
     <header class="main-header">
         <h1 class="main-header__logo">GeoVan</h1>
         <nav class="main-header__nav">
             <a href="#" class="boton">Ofrece tus servicios</a>
-            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+            <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
+                    class="bi bi-person-circle iconos"></i></label>
         </nav>
     </header>
     <aside class="main-sidebar">
@@ -23,10 +26,12 @@
                     <a href="principal.html" class="main-sidebar__enlace"><i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus citas</a>
+                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus
+                        citas</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-clock-history"></i> Historial</a>
+                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-clock-history"></i> Historial</a>
                 </li>
             </ul>
         </nav>
@@ -94,5 +99,22 @@
             </div>
         </section>
     </main>
+
+    <input type="checkbox" id="btn-modal-perfil" class="modal-perfil__activador">
+    <div class="modal-perfil">
+        <label for="btn-modal-perfil" class="modal-perfil__fondo"></label>
+        <div class="modal-perfil__contenido">
+            <div class="modal-perfil__img-container">
+                <img src="../assets/images/usuario.png" alt="Perfil" class="modal-perfil__img">
+            </div>
+            <h3 class="modal-perfil__nombre">Julián Andrés Diaz</h3>
+            <hr class="modal-perfil__divisor">
+            <a href="login.html" class="modal-perfil__logout">
+                <i class="bi bi-box-arrow-right"></i>
+                Cerrar sesión
+            </a>
+        </div>
+    </div>
 </body>
+
 </html>

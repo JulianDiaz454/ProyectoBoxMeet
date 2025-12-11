@@ -25,6 +25,7 @@
 @import url(components/card-citas.css);
 @import url(components/legal.css);
 @import url(components/ventana-emergente.css);
+@import url(components/perfil-modal.css);
 
 /* Fondos y estilos para paginas especificas */
 @import url(pages/index-inicio.css);

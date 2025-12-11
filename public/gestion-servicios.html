@@ -14,7 +14,8 @@
     <header class="main-header">
         <a href="principal.html" class="main-header__logo">GeoVan</a>
         <nav class="main-header__nav">
-            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+            <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
+                    class="bi bi-person-circle iconos"></i></label>
         </nav>
     </header>
     <aside class="main-sidebar">
@@ -92,6 +93,22 @@
 
         </section>
     </main>
+
+    <input type="checkbox" id="btn-modal-perfil" class="modal-perfil__activador">
+    <div class="modal-perfil">
+        <label for="btn-modal-perfil" class="modal-perfil__fondo"></label>
+        <div class="modal-perfil__contenido">
+            <div class="modal-perfil__img-container">
+                <img src="../assets/images/usuario.png" alt="Perfil" class="modal-perfil__img">
+            </div>
+            <h3 class="modal-perfil__nombre">Julián Andrés Diaz</h3>
+            <hr class="modal-perfil__divisor">
+            <a href="login.html" class="modal-perfil__logout">
+                <i class="bi bi-box-arrow-right"></i>
+                Cerrar sesión
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
