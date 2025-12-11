@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
+    <title>Gestion de Citas</title>
+</head>
+
+<body class="body-principal">
+    <div class="index-fondo"></div>
+    <header class="main-header">
+        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <nav class="main-header__nav">
+            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <nav class="main-sidebar__nav">
+            <ul class="main-sidebar__lista">
+                <li class="main-sidebar__elemento">
+                    <a href="gestion-negocio.html" class="main-sidebar__enlace"><i class="bi bi-house"></i> Tu
+                        negocio</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-calendar-check"></i> Tus citas</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-citas">
+        <section class="contenido-principal">
+            <h2 class="contenido-principal__titulo">Proximas citas</h2>
+            <div class="contenido-principal__citas">
+
+                <article class="card-proxima-cita">
+                    <input type="checkbox" id="cita-toggle-1" class="card-proxima-cita__check">
+
+                    <div class="card-proxima-cita__header">
+                        <h3 class="card-proxima-cita__titulo">Sala de belleza valeria</h3>
+                        <div class="card-proxima-cita__resumen">
+                            <span class="card-proxima-cita__dato"><strong>Fecha / Hora :</strong> 11 - 29 / 2:00
+                                pm</span>
+                            <span class="card-proxima-cita__dato"><strong>Cliente :</strong> Arturo Vidal</span>
+                            <label for="cita-toggle-1" class="card-proxima-cita__btn-toggle">
+                                <span class="texto-detalles">Detalles</span>
+                                <span class="texto-ver-menos">Ver menos</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="card-proxima-cita__detalle-expandido">
+                        <div class="card-proxima-cita__fila">
+                            <h4 class="card-proxima-cita__subtitulo">Detalles de servicios</h4>
+                            <span class="card-proxima-cita__dato"><strong>Contacto :</strong> 3183446794</span>
+                        </div>
+
+                        <ul class="card-proxima-cita__lista">
+                            <li class="card-proxima-cita__item">
+                                <span>Balayage :</span>
+                                <span>150.000 COP</span>
+                            </li>
+                            <li class="card-proxima-cita__item">
+                                <span>Peinado sencillo :</span>
+                                <span>40.000 COP</span>
+                            </li>
+                        </ul>
+
+                        <div class="card-proxima-cita__footer">
+                            <div class="card-proxima-cita__total">
+                                <strong>Costo total:</strong>
+                                <span>190.000 COP</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -39,3 +39,6 @@
 @import url(pages/nuevo-empleado.css);
 @import url(pages/gestion-horarios.css);
 @import url(pages/modificar-horarios.css);
+@import url(pages/gestion-servicios.css);
+@import url(pages/agregar-servicio.css);
+@import url(pages/gestion-citas.css);

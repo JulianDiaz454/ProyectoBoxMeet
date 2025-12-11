@@ -5,22 +5,25 @@
     grid-area: main;
     padding: 0 0.5rem;
 }
+
 /* Estilos para el contenderoo general */
 .contenido-principal {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: var(--radio-bordes-contendor);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--espaciado-mediano-alto)  ;
+    gap: var(--espaciado-mediano-alto);
     width: 100%;
     height: 100%;
 }
+
 /* Estilos para el titulo del contenedor */
 .contenido-principal__titulo {
     margin-top: var(--espaciado-mediano-alto);
     font-size: var(--fuente-size-h2);
 }
+
 /* Estilos para un contenedor que almacenar las cards */
 .contenido-principal__citas {
     width: 95%;

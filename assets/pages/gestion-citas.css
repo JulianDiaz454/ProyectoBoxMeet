@@ -1,0 +1,183 @@
+/* Archivo que contiene estilos para la pagina de gestion citas */
+
+/* Estilos especificos para la pagina de gestion citas */
+.main-citas {
+    grid-area: main;
+    padding: 0 0.5rem;
+}
+
+/* Reutilizacion de clases base de tus-citas para layout general */
+.contenido-principal {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: var(--radio-bordes-contendor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-mediano-alto);
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-principal__titulo {
+    margin-top: var(--espaciado-mediano-alto);
+    font-size: var(--fuente-size-h2);
+    font-family: var(--fuente-titulos);
+}
+
+.contenido-principal__citas {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-mediano-alto);
+    padding-bottom: 2rem;
+}
+
+/* =========================================
+   NUEVA TARJETA PROXIMA CITA (Negocio)
+   ========================================= */
+
+.card-proxima-cita {
+    background-color: #000000;
+    /* Fondo negro */
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-mediano-alto);
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    color: var(--fuente-color-principal);
+    border-right: 25px solid #4a0000;
+    /* Franja roja derecha */
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-pequeño-alto);
+}
+
+/* Checkbox oculto para logica expandir */
+.card-proxima-cita__check {
+    display: none;
+}
+
+/* Titulo principal de la tarjeta */
+.card-proxima-cita__titulo {
+    font-size: var(--fuente-size-h3);
+    font-weight: var(--fuente-weight-titulos);
+    margin-bottom: var(--espaciado-pequeño-alto);
+}
+
+/* Resumen (siempre visible) */
+.card-proxima-cita__resumen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Datos generales */
+.card-proxima-cita__dato {
+    font-size: var(--fuente-size-p);
+    color: #ccc;
+}
+
+.card-proxima-cita__dato strong {
+    color: var(--fuente-color-principal);
+    font-weight: var(--fuente-weight-sub-titulos);
+}
+
+/* Boton Toggle (Borde morado) */
+.card-proxima-cita__btn-toggle {
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    background-color: rgba(116, 0, 161, 0.2);
+    min-width: 100px;
+    text-align: center;
+}
+
+.card-proxima-cita__btn-toggle:hover {
+    background-color: rgba(116, 0, 161, 0.4);
+}
+
+/* Logica para cambiar texto del boton */
+.texto-ver-menos {
+    display: none;
+}
+
+.card-proxima-cita__check:checked~.card-proxima-cita__header .texto-detalles {
+    display: none;
+}
+
+.card-proxima-cita__check:checked~.card-proxima-cita__header .texto-ver-menos {
+    display: inline;
+}
+
+
+/* Seccion Expandida (Oculta por defecto) */
+.card-proxima-cita__detalle-expandido {
+    display: none;
+    margin-top: var(--espaciado-mediano-alto);
+    flex-direction: column;
+    gap: var(--espaciado-mediano-alto);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Mostrar cuando el checkbox esta activado */
+.card-proxima-cita__check:checked~.card-proxima-cita__detalle-expandido {
+    display: flex;
+}
+
+/* Subtitulo de detalles */
+.card-proxima-cita__subtitulo {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-titulos);
+    margin-bottom: 0.5rem;
+}
+
+/* Lista de servicios */
+.card-proxima-cita__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-proxima-cita__item {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    color: #ccc;
+    font-size: var(--fuente-size-p);
+}
+
+/* Footer expandido (Solo total) */
+.card-proxima-cita__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card-proxima-cita__total {
+    font-size: var(--fuente-size-h3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
