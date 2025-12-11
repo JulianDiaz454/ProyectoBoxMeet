@@ -1,12 +1,14 @@
 /* Archivo que contiene estilos para la pagina de gestion citas */
 
 /* Estilos especificos para la pagina de gestion citas */
+/* Contenedor principal de la pagina de citas */
 .main-citas {
     grid-area: main;
     padding: 0 0.5rem;
 }
 
 /* Reutilizacion de clases base de tus-citas para layout general */
+/* Contenedor principal que agrupa el contenido de las citas */
 .contenido-principal {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: var(--radio-bordes-contendor);
@@ -18,12 +20,14 @@
     height: 100%;
 }
 
+/* Titulo de la seccion principal */
 .contenido-principal__titulo {
     margin-top: var(--espaciado-mediano-alto);
     font-size: var(--fuente-size-h2);
     font-family: var(--fuente-titulos);
 }
 
+/* Contenedor de la lista de citas */
 .contenido-principal__citas {
     width: 95%;
     height: auto;
@@ -34,10 +38,7 @@
     padding-bottom: 2rem;
 }
 
-/* =========================================
-   NUEVA TARJETA PROXIMA CITA (Negocio)
-   ========================================= */
-
+/* Tarjeta contenedora de la proxima cita */
 .card-proxima-cita {
     background-color: #000000;
     /* Fondo negro */
@@ -81,6 +82,14 @@
     color: #ccc;
 }
 
+/* Fila de datos en la tarjeta */
+.card-proxima-cita__fila {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+/* Estilos para texto en negrita dentro de los datos */
 .card-proxima-cita__dato strong {
     color: var(--fuente-color-principal);
     font-weight: var(--fuente-weight-sub-titulos);
@@ -101,19 +110,22 @@
     text-align: center;
 }
 
+/* Efecto hover para el boton toggle */
 .card-proxima-cita__btn-toggle:hover {
     background-color: rgba(116, 0, 161, 0.4);
 }
 
-/* Logica para cambiar texto del boton */
+/* Texto "Ver menos" oculto por defecto */
 .texto-ver-menos {
     display: none;
 }
 
+/* Ocultar texto "Detalles" cuando el checkbox esta marcado */
 .card-proxima-cita__check:checked~.card-proxima-cita__header .texto-detalles {
     display: none;
 }
 
+/* Mostrar texto "Ver menos" cuando el checkbox esta marcado */
 .card-proxima-cita__check:checked~.card-proxima-cita__header .texto-ver-menos {
     display: inline;
 }
@@ -150,6 +162,7 @@
     gap: 0.5rem;
 }
 
+/* Item individual de la lista de servicios */
 .card-proxima-cita__item {
     display: flex;
     justify-content: space-between;
@@ -166,18 +179,24 @@
     margin-top: 1rem;
 }
 
+/* Total del costo en el footer */
 .card-proxima-cita__total {
     font-size: var(--fuente-size-h3);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
+/* Header de la tarjeta que agrupa titulo y resumen */
+.card-proxima-cita__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Clave o etiqueta del servicio */
+.card-proxima-cita__clave {
+    font-weight: var(--peso-medio-bajo);
+}
+
+/* Valor o precio del servicio */
+.card-proxima-cita__valor {
+    font-weight: var(--peso-bajo);
 }
