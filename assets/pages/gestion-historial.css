@@ -1,0 +1,81 @@
+/* Archivo que contiene estilos para la pagina de gestion historial */
+
+/* Reutilizacion de clases base de layout general (similar a gestion-citas) */
+.main-citas {
+    grid-area: main;
+    padding: 0 0.5rem;
+}
+
+.contenido-principal {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: var(--radio-bordes-contendor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-mediano-alto);
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-principal__titulo {
+    margin-top: var(--espaciado-mediano-alto);
+    font-size: var(--fuente-size-h2);
+    font-family: var(--fuente-titulos);
+}
+
+.contenido-principal__citas {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-mediano-alto);
+    padding-bottom: 2rem;
+}
+
+/* =========================================
+   TARJETA HISTORIAL NEGOCIO
+   ========================================= */
+
+.card-historial-negocio {
+    background-color: #000000;
+    /* Fondo negro */
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-mediano-alto);
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    color: var(--fuente-color-principal);
+    border-right: 25px solid #1a4a00;
+    /* Franja verde derecha (verde oscuro segun imagen) */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Espaciado interno mayor */
+}
+
+/* Titulo principal de la tarjeta */
+.card-historial-negocio__titulo {
+    font-size: var(--fuente-size-h3);
+    font-weight: var(--fuente-weight-titulos);
+}
+
+/* Contenedor de la informacion en Grid para 2 columnas */
+.card-historial-negocio__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+}
+
+/* Bloque de dato individual */
+.card-historial-negocio__dato {
+    font-size: var(--fuente-size-p);
+    color: #ccc;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-historial-negocio__dato strong {
+    color: var(--fuente-color-principal);
+    font-weight: var(--fuente-weight-sub-titulos);
+}
