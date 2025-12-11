@@ -1,0 +1,19 @@
+/* Archivo que contiene estilos para gestionar el tamaño de elementos del archivo ofrece-servicios.html */
+
+
+/* Bloque: estilos para el contenedor */
+.tarjeta-servicios {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: var(--espaciado-contendor);
+    max-width: var(--ancho-formulario-grande);
+    width: 90%;
+    border-radius: var(--radio-bordes-contendor);
+    text-align: center;
+}
+
+/* Elemento: Estilos para el titulo */
+.tarjeta-servicios__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-size-h2);
+    margin-bottom: var(--espaciado-pequeño-alto);
+}

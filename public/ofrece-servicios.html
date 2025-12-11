@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
+    <title>Ofrece tus servicios</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="principal.html" class="main-header__logo">GeoVan</a>
+    </header>
+
+    <main class="pagina-main">
+        <div class="index-fondo"></div>
+        <div class="tarjeta-servicios">
+            <h2 class="tarjeta-servicios__titulo">Ofrece tus servicios</h2>
+            <form class="form form--disposicion">
+                <div class="form__grupo">
+                    <label for="nombre_negocio" class="form__label">Nombre del negocio</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-briefcase-fill form__iconos"></i>
+                        <input class="form__input" type="text" name="nombre_negocio" id="nombre_negocio" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="direccion_negocio" class="form__label">Dirección del negocio</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-house-door-fill form__iconos"></i>
+                        <input class="form__input" type="text" name="direccion_negocio" id="direccion_negocio" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="numero_documento" class="form__label">Número de documento</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-person-vcard-fill form__iconos"></i>
+                        <input class="form__input" type="text" name="numero_documento" id="numero_documento" required>
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="foto_perfil" class="form__label">Cargar foto de perfil</label>
+                    <div class="form__contenedor-icon">
+                        <i class="bi bi-lock-fill form__iconos"></i>
+                        <input class="form__input" type="file" name="foto_perfil" id="foto_perfil" required>
+                    </div>
+                </div>
+
+                <button class="boton boton--form">Ofrecer servicios</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__contenido">
+            <div class="main-footer__seccion">
+                <p class="main-footer__logo">GeoVan</p>
+                <p class="main-footer__derechos">Colombia, Derechos reservados a Julian Diaz</p>
+            </div>
+
+            <nav class="main-footer__seccion">
+                <h4 class="main-footer__titulo">Legal y Ayuda</h4>
+                <ul class="main-footer__lista">
+                    <li><a href="politicas-privacidad.html" class="main-footer__enlace">Política de Privacidad</a></li>
+                    <li><a href="terminos-condiciones.html" class="main-footer__enlace">Términos y Condiciones</a></li>
+                    <li><a href="contactanos.html" class="main-footer__enlace">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
