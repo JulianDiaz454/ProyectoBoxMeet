@@ -1,18 +1,92 @@
-/* Componente: estilos para el componente de ventana emergente */
+/* Componente: Ventana emergente (Modal) */
 
+/* Elemento: Checkbox para activar la ventana (oculto) */
+.ventana-emergente__activador {
+    display: none;
+}
+
+/* Bloque: Contenedor principal de la ventana (Overlay) */
 .ventana-emergente {
-    visibility: hidden;
-    z-index: 9999;
+    display: none;
+    /* Oculto por defecto */
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Fondo oscuro semitransparente */
+    z-index: 9999;
     justify-content: center;
     align-items: center;
 }
 
-#mostrar-mas:target {
-    visibility: visible;
+/* Modificador: Muestra la ventana cuando el activador está marcado */
+.ventana-emergente__activador:checked~.ventana-emergente {
+    display: flex;
+}
+
+/* Elemento: Contenedor con el contenido de la tarjeta */
+.ventana-emergente__contenido {
+    background-color: var(--fondo-color-principal);
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-contendor);
+    text-align: center;
+    color: var(--fuente-color-principal);
+    max-width: 90%;
+    width: var(--ancho-formulario-grande);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-contendor);
+    align-items: center;
+    position: relative;
+}
+
+/* Elemento: Título principal de la ventana */
+.ventana-emergente__titulo {
+    font-size: var(--fuente-size-h3);
+    font-weight: var(--peso-medio-alto);
+    margin: 0;
+}
+
+/* Elemento: Contenedor para el icono */
+.ventana-emergente__icono {
+    font-size: 8rem;
+    color: var(--color-checkeado);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Elemento: Estilos para el icono interno */
+.ventana-emergente__icono i {
+    background-color: var(--color-checkeado);
+    color: var(--fuente-color-principal);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Elemento: Botón de acción principal */
+.ventana-emergente__boton {
+    background-color: var(--color-fondo-enlaces);
+    /* Morado */
+    color: var(--fuente-color-principal);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: var(--fuente-size-boton);
+    border-radius: var(--radio-bordes-cards);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Pseudo-clase: Cambio de color al pasar el cursor */
+.ventana-emergente__boton:hover {
+    background-color: var(--fuente-color-enlaces-claro);
+    transition: 0.3s;
 }

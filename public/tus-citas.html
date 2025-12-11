@@ -10,6 +10,9 @@
 </head>
 
 <body class="body-principal">
+    <!-- Activador global para la ventana emergente -->
+    <input type="checkbox" id="activador-modal" class="ventana-emergente__activador">
+
     <div class="index-fondo"></div>
     <header class="main-header">
         <h1 class="main-header__logo">GeoVan</h1>
@@ -87,7 +90,8 @@
                                 <span class="card-citas__texto-cerrar">Ver menos</span>
                             </label>
                             <div class="card-citas__detalles-box card-citas__botones-accion">
-                                <button class="card-citas__btn card-citas__btn--cancelar">Cancelar cita</button>
+                                <label for="activador-modal" class="card-citas__btn card-citas__btn--cancelar">Cancelar
+                                    cita</label>
                             </div>
                         </div>
                     </div>
@@ -95,6 +99,16 @@
             </div>
         </section>
     </main>
+
+    <div class="ventana-emergente">
+        <div class="ventana-emergente__contenido">
+            <h2 class="ventana-emergente__titulo">Su cita fue cancelada con exito</h2>
+            <div class="ventana-emergente__icono">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <label for="activador-modal" class="ventana-emergente__boton">Continuar</label>
+        </div>
+    </div>
 </body>
 
 </html>
