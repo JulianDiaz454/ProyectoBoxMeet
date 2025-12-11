@@ -44,47 +44,56 @@
             <div class="contenido-principal__citas">
 
 
-                <article class="card-proxima-cita">
-                    <input type="checkbox" id="cita-toggle-1" class="card-proxima-cita__check">
+                <div class="card-citas">
+                    <input type="checkbox" id="cita-toggle-1" class="card-citas__activador">
+                    <h3 class="card-citas__titulo">Sala de belleza valeria</h3>
 
-                    <div class="card-proxima-cita__header">
-                        <h3 class="card-proxima-cita__titulo">Sala de belleza valeria</h3>
-                        <div class="card-proxima-cita__resumen">
-                            <span class="card-proxima-cita__dato"><strong>Fecha / Hora :</strong> 11 - 29 / 2:00
-                                pm</span>
-                            <span class="card-proxima-cita__dato"><strong>Cliente :</strong> Arturo Vidal</span>
-                            <label for="cita-toggle-1" class="card-proxima-cita__btn-toggle">
-                                <span class="texto-detalles">Detalles</span>
-                                <span class="texto-ver-menos">Ver menos</span>
+                    <div class="card-citas__contenido">
+                        <div class="card-citas__column">
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Fecha / Hora :</span>
+                                <span class="card-citas__valor">11 - 29 / 2:00 pm</span>
+                            </div>
+                            <div class="card-citas__detalles-box">
+                                <h4 class="card-citas__subtitulo">Detalles de servicios</h4>
+                                <ul class="card-citas__lista-servicios">
+                                    <li class="card-citas__item-servicio">
+                                        <span class="card-citas__clave">Balayage :</span>
+                                        <span class="card-citas__valor">150.000 COP</span>
+                                    </li>
+                                    <li class="card-citas__item-servicio">
+                                        <span class="card-citas__clave">Peinado sencillo :</span>
+                                        <span class="card-citas__valor">40.000 COP</span>
+                                    </li>
+                                </ul>
+                                <div class="card-citas__total">
+                                    <span class="card-citas__clave">Costo total:</span>
+                                    <span class="card-citas__valor">190.000 COP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-citas__column">
+                            <div class="card-citas__informacion">
+                                <span class="card-citas__clave">Cliente :</span>
+                                <span class="card-citas__valor">Arturo Vidal</span>
+                            </div>
+                            <div class="card-citas__detalles-box">
+                                <div class="card-citas__informacion">
+                                    <span class="card-citas__clave">Contacto :</span>
+                                    <span class="card-citas__valor">3183446794</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-citas__column card-citas__column--alineacion">
+                            <label for="cita-toggle-1" class="card-citas__btn">
+                                <span class="card-citas__texto-abrir">Detalles</span>
+                                <span class="card-citas__texto-cerrar">Ver menos</span>
                             </label>
                         </div>
                     </div>
-
-                    <div class="card-proxima-cita__detalle-expandido">
-                        <div class="card-proxima-cita__fila">
-                            <h4 class="card-proxima-cita__subtitulo">Detalles de servicios</h4>
-                            <span class="card-proxima-cita__dato"><strong>Contacto :</strong> 3183446794</span>
-                        </div>
-
-                        <ul class="card-proxima-cita__lista">
-                            <li class="card-proxima-cita__item">
-                                <span class="card-proxima-cita__clave">Balayage :</span>
-                                <span class="card-proxima-cita__valor">150.000 COP</span>
-                            </li>
-                            <li class="card-proxima-cita__item">
-                                <span class="card-proxima-cita__clave">Peinado sencillo :</span>
-                                <span class="card-proxima-cita__valor">40.000 COP</span>
-                            </li>
-                        </ul>
-
-                        <div class="card-proxima-cita__footer">
-                            <div class="card-proxima-cita__total">
-                                <strong class="card-proxima-cita__clave">Costo total:</strong>
-                                <span class="card-proxima-cita__valor">190.000 COP</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                </div>
 
             </div>
         </section>
