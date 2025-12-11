@@ -15,15 +15,18 @@
     width: 90%;
     height: auto;
 }
+
 /* Elemento: Estilos para el titulo */
 .card-citas__titulo {
     font-size: var(--fuente-size-h3);
 }
+
 /* Elemento: Estilos para un contendeor con la información */
 .card-citas__contenido {
     display: flex;
     justify-content: space-around;
 }
+
 /* Elemento: Se aplican estilos */
 .card-citas__column {
     display: flex;
@@ -32,25 +35,30 @@
     align-items: start;
     width: 30%;
 }
+
 /* Se cambia la alineación de los itemas de la columna del inicio al final */
 .card-citas__column--alineacion {
     align-items: end;
 }
+
 /* Elemento: Contenedor de los elementos de información */
 .card-citas__informacion {
     display: flex;
     gap: var(--espaciado-pequeño-ancho);
 }
+
 /* Elemento: Estilos para la clave */
 .card-citas__clave {
     font-weight: var(--peso-medio);
     font-size: var(--fuente-size-p);
 }
+
 /* Elemento: Estilos para el valor */
 .card-citas__valor {
     font-weight: var(--peso-bajo);
     font-size: var(--fuente-size-p);
 }
+
 /* Elemento: Estilos para el boton de mostrar mas información */
 .card-citas__detalles {
     padding: 5px 20px;
@@ -59,6 +67,7 @@
     background-color: rgba(116, 0, 161, 0.1);
     color: var(--fuente-color-enlaces-claro);
 }
+
 /* Pseudo-clase para cambiar el diseño del boton al pasar el cursor */
 .card-citas__detalles:hover {
     transition: 0.3s;
@@ -71,3 +80,105 @@
     border-right: 2vw solid var(--color-bordes-card-terminada);
 }
 
+/* Ocultar el checkbox */
+.card-citas__activador {
+    display: none;
+}
+
+/* Contenedor de detalles oculto por defecto */
+.card-citas__detalles-box {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Mostrar contenedor cuando el checkbox está marcado */
+.card-citas__activador:checked~.card-citas__contenido {
+    flex-wrap: wrap;
+}
+
+/* Elemento: Muestra el contenedor de detalles cuando el activador está marcado */
+.card-citas__activador:checked~.card-citas__contenido .card-citas__detalles-box {
+    display: flex;
+}
+
+/* Lógica para cambiar el texto del botón (Detalles <-> Ver menos) */
+.card-citas__texto-cerrar {
+    display: none;
+}
+
+/* Elemento: Oculta el texto "Detalles" al expandir */
+.card-citas__activador:checked~.card-citas__contenido .card-citas__texto-abrir {
+    display: none;
+}
+
+/* Elemento: Muestra el texto "Ver menos" al expandir */
+.card-citas__activador:checked~.card-citas__contenido .card-citas__texto-cerrar {
+    display: inline;
+}
+
+/* Estilos para la lista de servicios y precios */
+.card-citas__lista-servicios {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Elemento: Estilo para cada item de servicio */
+.card-citas__item-servicio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: var(--fuente-color-principal);
+    font-size: var(--fuente-size-p);
+}
+
+/* Elemento: Estilos para el total de la cita */
+.card-citas__total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: var(--fuente-size-h3);
+}
+
+/* Botones en la sección expandida */
+.card-citas__botones-accion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Elemento: Estilos base para los botones de acción */
+.card-citas__btn {
+    padding: 5px 20px;
+    border-radius: var(--radio-bordes-bajo);
+    border: 1px solid var(--fuente-color-enlaces);
+    background-color: rgba(116, 0, 161, 0.1);
+    color: var(--fuente-color-enlaces-claro);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Pseudo-clase: Efecto hover para botones genéricos */
+.card-citas__btn:hover {
+    background-color: rgba(116, 0, 161, 0.5);
+    transition: 0.3s;
+}
+
+/* Botón Cancelar */
+.card-citas__btn--cancelar {
+    border-color: #8b0000;
+    color: #ff4d4d;
+    background-color: rgba(139, 0, 0, 0.1);
+}
+
+/* Pseudo-clase: Efecto hover específico para el botón cancelar */
+.card-citas__btn--cancelar:hover {
+    background-color: rgba(139, 0, 0, 0.5);
+}

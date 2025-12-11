@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
     <title>Tus citas</title>
 </head>
+
 <body class="body-principal">
     <div class="index-fondo"></div>
     <header class="main-header">
@@ -23,10 +25,12 @@
                     <a href="principal.html" class="main-sidebar__enlace"><i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-calendar-check"></i> Tus citas</a>
+                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-calendar-check"></i> Tus citas</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i> Historial</a>
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
                 </li>
             </ul>
         </nav>
@@ -36,22 +40,55 @@
             <h2 class="contenido-principal__titulo">Proximas citas</h2>
             <div class="contenido-principal__citas">
                 <div class="card-citas">
+                    <input type="checkbox" id="cita-1" class="card-citas__activador">
                     <h3 class="card-citas__titulo">Sala de belleza valeria</h3>
+
                     <div class="card-citas__contenido">
                         <div class="card-citas__column">
                             <div class="card-citas__informacion">
                                 <span class="card-citas__clave">Fecha / Hora:</span>
                                 <span class="card-citas__valor">11 - 29 / 2:00 pm</span>
                             </div>
+                            <div class="card-citas__detalles-box">
+                                <h4 class="card-citas__subtitulo">Detalles de servicios</h4>
+                                <ul class="card-citas__lista-servicios">
+                                    <li class="card-citas__item-servicio">
+                                        <span class="card-citas__clave">Balayage :</span>
+                                        <span class="card-citas__valor">150.000 COP</span>
+                                    </li>
+                                    <li class="card-citas__item-servicio">
+                                        <span class="card-citas__clave">Peinado sencillo :</span>
+                                        <span class="card-citas__valor">40.000 COP</span>
+                                    </li>
+                                </ul>
+                                <div class="card-citas__total">
+                                    <span class="card-citas__clave">Costo total:</span>
+                                    <span class="card-citas__valor">190.000 COP</span>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-citas__column">
                             <div class="card-citas__informacion">
                                 <span class="card-citas__clave">Dirección:</span>
                                 <span class="card-citas__valor">Cra 7A #8B - 03</span>
                             </div>
+                            <div class="card-citas__detalles-box">
+                                <div class="card-citas__informacion">
+                                    <span class="card-citas__clave">Estilista :</span>
+                                    <span class="card-citas__valor">Vanesa Alexandra</span>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-citas__column card-citas__column--alineacion">
-                            <a href="" class="card-citas__detalles">Detalles</a>
+                            <label for="cita-1" class="card-citas__btn">
+                                <span class="card-citas__texto-abrir">Detalles</span>
+                                <span class="card-citas__texto-cerrar">Ver menos</span>
+                            </label>
+                            <div class="card-citas__detalles-box card-citas__botones-accion">
+                                <button class="card-citas__btn card-citas__btn--cancelar">Cancelar cita</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,4 +96,5 @@
         </section>
     </main>
 </body>
+
 </html>
