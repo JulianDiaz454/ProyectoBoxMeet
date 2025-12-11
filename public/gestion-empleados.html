@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
+    <title>Gestión de Empleados</title>
+</head>
+
+<body class="body-principal">
+    <!-- Radios para gestion de estado de modales -->
+    <input type="radio" name="modal-eliminar" id="radio-close" class="modal-radio" checked>
+    <input type="radio" name="modal-eliminar" id="radio-confirm" class="modal-radio">
+    <input type="radio" name="modal-eliminar" id="radio-success" class="modal-radio">
+
+    <div class="index-fondo"></div>
+    <header class="main-header">
+        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <nav class="main-header__nav">
+            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <nav class="main-sidebar__nav">
+            <ul class="main-sidebar__lista">
+                <li class="main-sidebar__elemento">
+                    <a href="gestion-negocio.html" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-house"></i> Tu negocio</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus
+                        citas</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="gestion-main">
+        <section class="gestion-contenido">
+
+            <a href="gestion-negocio.html" class="enlace-volver">Volver</a>
+
+            <h1 class="gestion-main__titulo">Empleados</h1>
+
+            <div class="empleados-header">
+                <div class="empleados-busqueda">
+                    <input type="text" class="empleados-busqueda__input" placeholder="nombre o número de documento">
+                    <button class="empleados-busqueda__boton"><i class="bi bi-search"></i></button>
+                </div>
+                <a href="nuevo-empleado.html" class="btn-nuevo-empleado">Nuevo empleado</a>
+            </div>
+
+            <section class="empleados-grid">
+                <article class="card-empleado">
+                    <div class="card-empleado__info-box">
+                        <img src="../assets/images/icono-mundo.png" alt="Avatar" class="card-empleado__avatar">
+                        <div class="card-empleado__textos">
+                            <h3 class="card-empleado__nombre">Alberto Mora</h3>
+                            <span class="card-empleado__detalle">C.C 123456789</span>
+                            <span class="card-empleado__detalle">Tel: 3156789467</span>
+                        </div>
+                    </div>
+                    <label for="radio-confirm" class="card-empleado__btn-eliminar">Eliminar</label>
+                </article>
+                <article class="card-empleado">
+                    <div class="card-empleado__info-box">
+                        <img src="../assets/images/icono-mundo.png" alt="Avatar" class="card-empleado__avatar">
+                        <div class="card-empleado__textos">
+                            <h3 class="card-empleado__nombre">Alberto Mora</h3>
+                            <span class="card-empleado__detalle">C.C 123456789</span>
+                            <span class="card-empleado__detalle">Tel: 3156789467</span>
+                        </div>
+                    </div>
+                    <label for="radio-confirm" class="card-empleado__btn-eliminar">Eliminar</label>
+                </article>
+
+                <article class="card-empleado">
+                    <div class="card-empleado__info-box">
+                        <img src="../assets/images/icono-mundo.png" alt="Avatar" class="card-empleado__avatar">
+                        <div class="card-empleado__textos">
+                            <h3 class="card-empleado__nombre">Alberto Mora</h3>
+                            <span class="card-empleado__detalle">C.C 123456789</span>
+                            <span class="card-empleado__detalle">Tel: 3156789467</span>
+                        </div>
+                    </div>
+                    <button class="card-empleado__btn-eliminar">Eliminar</button>
+                </article>
+            </section>
+
+        </section>
+    </main>
+    </main>
+
+    <!-- Modal Confirmar Eliminación -->
+    <div class="ventana-emergente modal-confirm">
+        <div class="ventana-emergente__contenido">
+            <h2 class="ventana-emergente__titulo">Eliminar empleado</h2>
+            <p class="ventana-emergente__texto">¿Estas seguro de elimnar el empleado de tu negocio?</p>
+            <div class="modal-acciones">
+                <label for="radio-close" class="btn-modal-cancelar">Cancelar</label>
+                <label for="radio-success" class="btn-modal-eliminar">Eliminar</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Empleado Eliminado -->
+    <div class="ventana-emergente modal-success">
+        <div class="ventana-emergente__contenido">
+            <h2 class="ventana-emergente__titulo">Empleado eliminado</h2>
+            <p class="ventana-emergente__texto">El empleado fue eliminado del sistema con exito</p>
+            <label for="radio-close" class="ventana-emergente__boton">Continuar</label>
+        </div>
+    </div>
+</body>
+
+</html>

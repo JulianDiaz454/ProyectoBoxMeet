@@ -1,0 +1,206 @@
+/* Archivo que contiene estilos para la pagina de gestion de empleados */
+
+/* Bloque: Contenedor para la barra de búsqueda y botón de nuevo empleado */
+.empleados-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: var(--espaciado-mediano-ancho);
+    align-items: center;
+    margin-bottom: var(--espaciado-grande-alto);
+}
+
+/* Bloque: Contenedor del input de busqueda */
+.empleados-busqueda {
+    display: flex;
+    align-items: center;
+    background-color: var(--fondos-secundarios);
+    border-radius: var(--radio-bordes-inputs);
+    padding: 0;
+    overflow: hidden;
+    width: 60%;
+}
+
+/* Elemento: Input de texto para buscar */
+.empleados-busqueda__input {
+    border: none;
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-pequeño-ancho);
+    width: 100%;
+    outline: none;
+    font-size: var(--fuente-size-p);
+}
+
+/* Elemento: Botón con icono de lupa */
+.empleados-busqueda__boton {
+    background-color: var(--fuente-color-enlaces);
+    /* Morado */
+    color: var(--fuente-color-principal);
+    border: none;
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-mediano-ancho);
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Bloque: Botón para añadir nuevo empleado */
+.btn-nuevo-empleado {
+    background-color: var(--fuente-color-enlaces);
+    color: var(--fuente-color-principal);
+    border: none;
+    border-radius: var(--radio-bordes-inputs);
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-mediano-ancho);
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-sub-titulos);
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Bloque: Grid para las tarjetas de empleados */
+.empleados-grid {
+    display: flex;
+    gap: var(--espaciado-grande-ancho);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Bloque: Tarjeta de empleado individual */
+.card-empleado {
+    background-color: #1a1a1a;
+    /* Fondo oscuro ligeramente más claro que el negro */
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-mediano-alto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-pequeño-alto);
+    width: 300px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Elemento: Contenedor superior con avatar e info */
+.card-empleado__info-box {
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado-mediano-ancho);
+    width: 100%;
+}
+
+/* Elemento: Imagen de avatar */
+.card-empleado__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #98e698;
+    /* Color de fondo provisional para el avatar si es transparente */
+}
+
+/* Elemento: Contenedor de textos (Nombre, CC, Tel) */
+.card-empleado__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Elemento: Nombre del empleado */
+.card-empleado__nombre {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-titulos);
+    color: var(--fuente-color-principal);
+}
+
+/* Elemento: Detalles (CC, Tel) */
+.card-empleado__detalle {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-weight: var(--fuente-weight-base);
+}
+
+/* Elemento: Botón de eliminar */
+.card-empleado__btn-eliminar {
+    background-color: #5E0002;
+    /* Rojo oscuro similar a bordes pendientes */
+    color: #ffcccc;
+    border: 1px solid #ff4d4d;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: var(--espaciado-pequeño-alto);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+/* Pseudoclase: Hover en botón eliminar */
+.card-empleado__btn-eliminar:hover {
+    background-color: #800003;
+}
+
+/* Elemento: Enlace "Volver" */
+.enlace-volver {
+    align-self: flex-start;
+    margin-bottom: var(--espaciado-pequeño-alto);
+    color: #ccc;
+    font-size: var(--fuente-size-p);
+    display: block;
+    width: 100%;
+}
+
+/* Bloque: Logica de visibilidad para modales de eliminar */
+.modal-radio {
+    display: none;
+}
+
+#radio-confirm:checked~.modal-confirm {
+    display: flex;
+}
+
+#radio-success:checked~.modal-success {
+    display: flex;
+}
+
+/* Bloque: Estilos especificos para botones del modal de eliminar */
+.modal-acciones {
+    display: flex;
+    gap: var(--espaciado-mediano-ancho);
+    width: 100%;
+    justify-content: center;
+}
+
+/* Boton Cancelar (borde morado, fondo transparente) */
+.btn-modal-cancelar {
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces-claro);
+    background-color: transparent;
+    padding: 0.8rem 2rem;
+    border-radius: var(--radio-bordes-cards);
+    cursor: pointer;
+    font-size: var(--fuente-size-p);
+    transition: 0.2s;
+}
+
+.btn-modal-cancelar:hover {
+    background-color: rgba(116, 0, 161, 0.2);
+}
+
+/* Boton Eliminar (borde rojo, fondo transparente oscuro) */
+.btn-modal-eliminar {
+    border: 1px solid #5E0002;
+    /* Rojo oscuro */
+    color: #ff4d4d;
+    /* Rojo claro texto */
+    background-color: rgba(94, 0, 2, 0.3);
+    padding: 0.8rem 2rem;
+    border-radius: var(--radio-bordes-cards);
+    cursor: pointer;
+    font-size: var(--fuente-size-p);
+    transition: 0.2s;
+}
+
+.btn-modal-eliminar:hover {
+    background-color: rgba(94, 0, 2, 0.6);
+}

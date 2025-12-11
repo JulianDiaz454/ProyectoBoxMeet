@@ -1,0 +1,57 @@
+/* Archivo que contiene estilos para la pagina de nuevo empleado */
+
+/* Bloque: Formulario de nuevo empleado layout grid */
+.form-nuevo-empleado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espaciado-grande-ancho);
+    width: 80%;
+    margin-top: var(--espaciado-grande-alto);
+}
+
+/* Modificador: Botones de accion para el formulario */
+.form-acciones {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: var(--espaciado-grande-ancho);
+    margin-top: var(--espaciado-grande-alto);
+}
+
+/* Elemento: Botón de cancelar */
+.btn-cancelar {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    /* Rojo */
+    color: #ff4d4d;
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-grande-ancho);
+    border-radius: 20px;
+    font-size: var(--fuente-size-p);
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    transition: 0.2s;
+}
+
+.btn-cancelar:hover {
+    background-color: rgba(255, 77, 77, 0.1);
+}
+
+/* Elemento: Botón de añadir (primario) */
+.btn-anadir {
+    background-color: rgba(116, 0, 161, 0.2);
+    /* Morado transparente */
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
+    padding: var(--espaciado-pequeño-alto) var(--espaciado-grande-ancho);
+    border-radius: 20px;
+    font-size: var(--fuente-size-p);
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    transition: 0.2s;
+}
+
+.btn-anadir:hover {
+    background-color: rgba(116, 0, 161, 0.4);
+}

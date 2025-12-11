@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
+    <title>Nuevo Empleado</title>
+</head>
+
+<body class="body-principal">
+    <input type="checkbox" id="activador-modal" class="ventana-emergente__activador">
+    <div class="index-fondo"></div>
+    <header class="main-header">
+        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <nav class="main-header__nav">
+            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <nav class="main-sidebar__nav">
+            <ul class="main-sidebar__lista">
+                <li class="main-sidebar__elemento">
+                    <a href="gestion-negocio.html" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-house"></i> Tu negocio</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus
+                        citas</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="gestion-main">
+        <section class="gestion-contenido">
+
+            <h1 class="gestion-main__titulo">Nuevo empleado</h1>
+
+            <form class="form-nuevo-empleado">
+                <div class="form__grupo">
+                    <label for="nombres" class="form__label">Nombres completos</label>
+                    <input class="form__input" type="text" id="nombres" name="nombres" required>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="apellidos" class="form__label">Apellidos completos</label>
+                    <input class="form__input" type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="documento" class="form__label">Número de documento</label>
+                    <input class="form__input" type="text" id="documento" name="documento" required>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="telefono" class="form__label">Número de telefono</label>
+                    <input class="form__input" type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-acciones">
+                    <a href="gestion-empleados.html" class="btn-cancelar">Cancelar proceso</a>
+                    <label for="activador-modal" class="btn-anadir">Añadir empleado</label>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <div class="ventana-emergente">
+        <div class="ventana-emergente__contenido">
+            <h2 class="ventana-emergente__titulo">Empleado añadido</h2>
+            <p class="ventana-emergente__texto">Ahora puedes ver a tu empleado en el sistema</p>
+            <a href="gestion-empleados.html" class="ventana-emergente__boton">Continuar</a>
+        </div>
+    </div>
+</body>
+
+</html>

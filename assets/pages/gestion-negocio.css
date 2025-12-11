@@ -1,0 +1,131 @@
+/* Archivo que contiene estilos para la pagina de gestion de negocio */
+
+
+/* Bloque: Se define el area de grid para el main */
+.gestion-main {
+    grid-area: main;
+    padding: 0 0.5rem;
+}
+
+/* Bloque: Contenedor principal con fondo oscuro */
+.gestion-contenido {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: var(--radio-bordes-contendor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado-grande-alto);
+    padding: var(--espaciado-contendor);
+    width: 100%;
+    height: 100%;
+}
+
+/* Elemento: Titulo principal de la sección */
+.gestion-main__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-size-h2);
+    margin-bottom: var(--espaciado-pequeño-alto);
+    text-align: center;
+}
+
+/* Elemento: Subtítulo de la sección */
+.gestion-main__subtitulo {
+    font-size: var(--fuente-size-h3);
+    margin-bottom: var(--espaciado-pequeño-alto);
+    text-align: center;
+}
+
+/* Bloque: Contenedor de las tarjetas de informacion (Ingresos, Horas) */
+.gestion-stats {
+    display: flex;
+    gap: var(--espaciado-grande-ancho);
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Bloque: Tarjeta de estadistica individual */
+.card-stat {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid;
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-mediano-alto) var(--espaciado-grande-ancho);
+    text-align: center;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Modificador: Color verde para tarjeta */
+.card-stat--verde {
+    border-color: #28a745;
+}
+
+/* Modificador: Color azul para tarjeta */
+.card-stat--azul {
+    border-color: #007bff;
+}
+
+/* Elemento: Etiqueta de la tarjeta */
+.card-stat__label {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-base);
+}
+
+/* Elemento: Valor numérico de la tarjeta */
+.card-stat__valor {
+    font-size: var(--fuente-size-h2);
+    font-weight: var(--fuente-weight-titulos);
+}
+
+/* Modificador: Color verde para el texto del valor */
+.card-stat__valor--verde {
+    color: #28a745;
+}
+
+/* Modificador: Color azul para el texto del valor */
+.card-stat__valor--azul {
+    color: #007bff;
+}
+
+/* Bloque: Contenedor de las tarjetas de accion */
+.gestion-actions {
+    display: flex;
+    gap: var(--espaciado-grande-ancho);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Bloque: Tarjeta de accion (botones cuadrados) */
+.card-action {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid var(--fuente-color-enlaces);
+    border-radius: var(--radio-bordes-cards);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--fuente-color-principal);
+    transition: transform 0.2s;
+}
+
+/* Pseudoclase: Animación hover para la tarjeta */
+.card-action:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Elemento: Icono de la acción */
+.card-action__icono {
+    font-size: 3rem;
+}
+
+/* Elemento: Texto descriptivo de la acción */
+.card-action__texto {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-sub-titulos);
+}
