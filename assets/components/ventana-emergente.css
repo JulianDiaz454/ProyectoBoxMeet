@@ -1,11 +1,11 @@
-/* Componente: Ventana emergente (Modal) */
+/* Componente: Ventana emergente */
 
-/* Elemento: Checkbox para activar la ventana (oculto) */
+/* Elemento: Checkbox para activar la ventana  */
 .ventana-emergente__activador {
     display: none;
 }
 
-/* Bloque: Contenedor principal de la ventana (Overlay) */
+/* Bloque: Contenedor principal de la ventana  */
 .ventana-emergente {
     display: none;
     /* Oculto por defecto */
@@ -48,6 +48,12 @@
     font-size: var(--fuente-size-h3);
     font-weight: var(--peso-medio-alto);
     margin: 0;
+}
+
+/* Elemento: Texto de la ventana */
+.ventana-emergente__texto {
+    font-size: var(--fuente-size-p);
+    font-weight: var(--peso-medio);
 }
 
 /* Elemento: Contenedor para el icono */

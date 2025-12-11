@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
     <title>Cambio de contraseña</title>
 </head>
+
 <body>
+    <input type="checkbox" id="activador-modal" class="ventana-emergente__activador">
+
     <header class="main-header">
         <h1 class="main-header__logo">GeoVan</h1>
     </header>
@@ -29,10 +33,11 @@
                     <label for="contraseña_login" class="form__label">Confirmar contraseña</label>
                     <div class="form__contenedor-icon">
                         <i class="bi bi-lock-fill form__iconos"></i>
-                        <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login" required>
+                        <input class="form__input" type="password" name="contraseña_usuario" id="contraseña_login"
+                            required>
                     </div>
                 </div>
-                <button class="boton boton--form">Cambiar contraseña</button>
+                <label for="activador-modal" class="boton boton--form">Cambiar contraseña</label>
             </form>
         </div>
     </main>
@@ -43,7 +48,7 @@
                 <p class="main-footer__logo">GeoVan</p>
                 <p class="main-footer__derechos">Colombia, Derechos reservados a Julian Diaz</p>
             </div>
- 
+
             <nav class="main-footer__seccion">
                 <h4 class="main-footer__titulo">Legal y Ayuda</h4>
                 <ul class="main-footer__lista">
@@ -54,5 +59,14 @@
             </nav>
         </div>
     </footer>
+
+    <div class="ventana-emergente">
+        <div class="ventana-emergente__contenido">
+            <h2 class="ventana-emergente__titulo">Proceso finalizado</h2>
+            <p class="ventana-emergente__texto">Se realizo el cambio de contraseña de manera exitosa</p>
+            <a href="login.html" class="ventana-emergente__boton">Iniciar sesión</a>
+        </div>
+    </div>
 </body>
+
 </html>
