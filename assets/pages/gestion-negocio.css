@@ -20,6 +20,10 @@
     height: 100%;
 }
 
+.gestion-contenido--espaciado {
+    gap: var(--espaciado-pequeño-alto);
+}
+
 /* Elemento: Titulo principal de la sección */
 .gestion-main__titulo {
     font-family: var(--fuente-titulos);

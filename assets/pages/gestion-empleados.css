@@ -121,7 +121,7 @@
     font-weight: var(--fuente-weight-base);
 }
 
-/* Elemento: Botón de eliminar */
+/* Elemento: Botón de eliminar, ahora es un label */
 .card-empleado__btn-eliminar {
     background-color: #5E0002;
     /* Rojo oscuro similar a bordes pendientes */
@@ -155,10 +155,12 @@
     display: none;
 }
 
+/* Modificador: Muestra modal de confirmacion */
 #radio-confirm:checked~.modal-confirm {
     display: flex;
 }
 
+/* Modificador: Muestra modal de exito */
 #radio-success:checked~.modal-success {
     display: flex;
 }
@@ -171,7 +173,7 @@
     justify-content: center;
 }
 
-/* Boton Cancelar (borde morado, fondo transparente) */
+/* Elemento: Boton Cancelar (borde morado, fondo transparente) */
 .btn-modal-cancelar {
     border: 1px solid var(--fuente-color-enlaces);
     color: var(--fuente-color-enlaces-claro);
@@ -183,11 +185,12 @@
     transition: 0.2s;
 }
 
+/* Pseudoclase: Hover en boton cancelar */
 .btn-modal-cancelar:hover {
     background-color: rgba(116, 0, 161, 0.2);
 }
 
-/* Boton Eliminar (borde rojo, fondo transparente oscuro) */
+/* Elemento: Boton Eliminar (borde rojo, fondo transparente oscuro) */
 .btn-modal-eliminar {
     border: 1px solid #5E0002;
     /* Rojo oscuro */
@@ -201,6 +204,7 @@
     transition: 0.2s;
 }
 
+/* Pseudoclase: Hover en boton eliminar */
 .btn-modal-eliminar:hover {
     background-color: rgba(94, 0, 2, 0.6);
 }

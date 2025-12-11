@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/icono-mundo.png">
+    <title>Modificar Horarios</title>
+</head>
+
+<body class="body-principal">
+    <div class="index-fondo"></div>
+    <header class="main-header">
+        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <nav class="main-header__nav">
+            <a href="#" class="main-header__enlaces"><i class="bi bi-person-circle iconos"></i></a>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <nav class="main-sidebar__nav">
+            <ul class="main-sidebar__lista">
+                <li class="main-sidebar__elemento">
+                    <a href="gestion-negocio.html" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-house"></i> Tu negocio</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="tus-citas.html" class="main-sidebar__enlace"><i class="bi bi-calendar-check"></i> Tus
+                        citas</a>
+                </li>
+                <li class="main-sidebar__elemento">
+                    <a href="historial-citas.html" class="main-sidebar__enlace"><i class="bi bi-clock-history"></i>
+                        Historial</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="gestion-main">
+        <section class="gestion-contenido gestion-contenido--espaciado">
+
+            <a href="gestion-horarios.html" class="enlace-volver">Volver</a>
+
+            <h1 class="gestion-main__titulo">Horarios</h1>
+
+            <div class="horarios-header">
+                <a href="gestion-horarios.html" class="btn-guardar">Guardar</a>
+            </div>
+
+            <div class="tabla-horarios">
+                <!-- Headers -->
+                <span class="tabla-horarios__header">Dias</span>
+                <span class="tabla-horarios__header">Hora de apertura</span>
+                <span class="tabla-horarios__header">Hora de cierre</span>
+
+                <!-- Lunes -->
+                <span class="tabla-horarios__celda">Lunes</span>
+                <input type="text" class="tabla-horarios__input" value="08:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="08:00 P.M">
+
+                <!-- Martes -->
+                <span class="tabla-horarios__celda">Martes</span>
+                <input type="text" class="tabla-horarios__input" value="08:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="08:00 P.M">
+
+                <!-- Miercoles -->
+                <span class="tabla-horarios__celda">Miercoles</span>
+                <input type="text" class="tabla-horarios__input" value="08:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="08:00 P.M">
+
+                <!-- Jueves -->
+                <span class="tabla-horarios__celda">Jueves</span>
+                <input type="text" class="tabla-horarios__input" value="08:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="08:00 P.M">
+
+                <!-- Viernes -->
+                <span class="tabla-horarios__celda">Viernes</span>
+                <input type="text" class="tabla-horarios__input" value="08:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="08:00 P.M">
+
+                <!-- Sabado -->
+                <span class="tabla-horarios__celda">Sabado</span>
+                <input type="text" class="tabla-horarios__input" value="09:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="05:00 P.M">
+
+                <!-- Domingo -->
+                <span class="tabla-horarios__celda">Domingo</span>
+                <input type="text" class="tabla-horarios__input" value="09:00 A.M">
+                <input type="text" class="tabla-horarios__input" value="02:00 P.M">
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

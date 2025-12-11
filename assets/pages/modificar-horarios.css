@@ -1,0 +1,40 @@
+/* Archivo que contiene estilos para la pagina de modificar horarios */
+
+/* Importamos estilos base de horarios para reutilizar la tabla */
+@import url('gestion-horarios.css');
+
+/* Elemento: Boton guardar (Estilo solido morado) */
+.btn-guardar {
+    background-color: transparent;
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    background-color: rgba(116, 0, 161, 0.4);
+}
+
+.btn-guardar:hover {
+    background-color: var(--fuente-color-enlaces);
+    color: var(--fuente-color-principal);
+}
+
+/* Elemento: Input de hora */
+.tabla-horarios__input {
+    background-color: var(--fondos-secundarios);
+    /* Blanco */
+    border: none;
+    border-radius: var(--radio-bordes-inputs);
+    padding: 5px 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: inherit;
+    font-size: var(--fuente-size-p);
+    color: #333;
+    /* Texto oscuro para contraste en fondo blanco */
+    outline: none;
+}

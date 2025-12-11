@@ -1,0 +1,70 @@
+/* Archivo que contiene estilos para la pagina de gestion de horarios */
+
+/* Bloque: Contenedor para el encabezado con el boton modificar */
+.horarios-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    /* Boton modificar a la derecha */
+    margin-bottom: var(--espaciado-pequeño-alto);
+    padding-right: 7.5rem;
+}
+
+/* Elemento: Boton modificar */
+.btn-modificar {
+    background-color: transparent;
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-modificar:hover {
+    background-color: rgba(116, 0, 161, 0.2);
+}
+
+/* Bloque: Contenedor de la tabla de horarios */
+.tabla-horarios {
+    width: 80%;
+    border: 1px solid #333;
+    /* Borde sutil del contenedor */
+    border-radius: var(--radio-bordes-cards);
+    padding: var(--espaciado-grande-alto) var(--espaciado-grande-ancho);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--espaciado-mediano-alto);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo ligeramente mas oscuro si se desea */
+}
+
+/* Elemento: Encabezados de columna (Dias, Apertura, Cierre) */
+.tabla-horarios__header {
+    color: var(--fuente-color-enlaces-claro);
+    /* Morado claro */
+    font-weight: var(--fuente-weight-titulos);
+    font-size: var(--fuente-size-p);
+    margin-bottom: var(--espaciado-pequeño-alto);
+}
+
+/* Elemento: Celda de datos (filas) */
+.tabla-horarios__celda {
+    color: var(--fuente-color-principal);
+    font-size: var(--fuente-size-p);
+    font-weight: var(--fuente-weight-base);
+    padding: 5px 0;
+}
+
+/* Reutilizacion: Estilo para el enlace volver (Duplicado de empleados si no se mueve a base) */
+.enlace-volver {
+    align-self: flex-start;
+    margin-bottom: var(--espaciado-pequeño-alto);
+    color: #ccc;
+    font-size: var(--fuente-size-p);
+    display: block;
+    width: 100%;
+}
