@@ -11,9 +11,15 @@
 </head>
 
 <body class="body-principal">
+    <input type="checkbox" id="sidebar-active" class="sidebar-trigger">
     <div class="index-fondo"></div>
     <header class="main-header">
-        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <div class="main-header__start">
+            <label for="sidebar-active" class="hamburger-menu">
+                <i class="bi bi-list"></i>
+            </label>
+            <h1 class="main-header__logo">GeoVan</h1>
+        </div>
         <nav class="main-header__nav">
             <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
                     class="bi bi-person-circle iconos"></i></label>
@@ -31,7 +37,7 @@
                         citas</a>
                 </li>
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                    <a href="gestion-historial.html" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
                             class="bi bi-clock-history"></i> Historial</a>
                 </li>
             </ul>

@@ -11,9 +11,15 @@
 </head>
 
 <body class="body-principal">
+    <input type="checkbox" id="sidebar-active" class="sidebar-trigger">
     <div class="index-fondo"></div>
     <header class="main-header">
-        <a href="principal.html" class="main-header__logo">GeoVan</a>
+        <div class="main-header__start">
+            <label for="sidebar-active" class="hamburger-menu">
+                <i class="bi bi-list"></i>
+            </label>
+            <h1 class="main-header__logo">GeoVan</h1>
+        </div>
         <nav class="main-header__nav">
             <label for="btn-modal-perfil" class="main-header__enlaces" style="cursor: pointer;"><i
                     class="bi bi-person-circle iconos"></i></label>
@@ -23,7 +29,8 @@
         <nav class="main-sidebar__nav">
             <ul class="main-sidebar__lista">
                 <li class="main-sidebar__elemento">
-                    <a href="#" class="main-sidebar__enlace main-sidebar__enlace--activo"><i class="bi bi-house"></i> Tu
+                    <a href="gestion-negocio.html" class="main-sidebar__enlace main-sidebar__enlace--activo"><i
+                            class="bi bi-house"></i> Tu
                         negocio</a>
                 </li>
                 <li class="main-sidebar__elemento">
@@ -45,7 +52,7 @@
             <section class="gestion-stats">
                 <article class="card-stat card-stat--verde">
                     <span class="card-stat__label">Ingresos del mes</span>
-                    <span class="card-stat__valor card-stat__valor--verde">3’450.000 COP</span>
+                    <span class="card-stat__valor card-stat__valor--verde">3'450.000 COP</span>
                 </article>
 
                 <article class="card-stat card-stat--azul">
