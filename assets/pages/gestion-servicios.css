@@ -1,0 +1,83 @@
+/* Archivo que contiene estilos para la pagina de gestion de servicios */
+
+/* Bloque: Contenedor para el encabezado con el boton agregar servicio */
+.servicios-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: var(--espaciado-mediano-alto);
+    padding-right: var(--espaciado-grande-ancho);
+}
+
+/* Elemento: Boton agregar servicio (Estilo solido morado brillante) */
+.btn-agregar-servicio {
+    background-color: #9d00ff;
+    /* Morado brillante similar a imagen */
+    color: var(--fuente-color-principal);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: var(--fuente-weight-base);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(157, 0, 255, 0.4);
+}
+
+.btn-agregar-servicio:hover {
+    background-color: #b040ff;
+}
+
+/* Bloque: Contenedor de la lista de servicios */
+.lista-servicios {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-mediano-alto);
+    width: 90%;
+}
+
+/* Bloque: Tarjeta de servicio individual */
+.card-servicio {
+    display: flex;
+    width: 100%;
+    border-radius: var(--radio-bordes-cards);
+    overflow: hidden;
+    /* Para que los hijos respeten los bordes redondeados */
+    min-height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Elemento: Seccion Izquierda (Nombre) y Derecha (Precio) */
+.card-servicio__lateral {
+    background-color: #1e0b36;
+    /* Morado muy oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--espaciado-mediano-alto);
+    width: 20%;
+    /* Ancho fijo aproximado */
+    color: var(--fuente-color-principal);
+    font-weight: var(--fuente-weight-sub-titulos);
+    font-size: var(--fuente-size-p);
+    text-align: center;
+}
+
+/* Elemento: Seccion Central (Descripcion) */
+.card-servicio__centro {
+    background-color: #000000;
+    /* Fondo negro */
+    flex-grow: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    align-items: center;
+    padding: var(--espaciado-mediano-alto) var(--espaciado-grande-ancho);
+    color: var(--fuente-color-principal);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    border-left: 1px solid #333;
+    /* Separador sutil opcional */
+    border-right: 1px solid #333;
+}

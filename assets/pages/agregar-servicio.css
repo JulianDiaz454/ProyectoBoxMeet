@@ -1,0 +1,76 @@
+/* Archivo que contiene estilos para la pagina de agregar servicio */
+
+/* Reutilizamos estructura de formulario general */
+.form-agregar-servicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espaciado-mediano-alto) var(--espaciado-grande-ancho);
+    width: 90%;
+    margin-top: var(--espaciado-mediano-alto);
+}
+
+/* Modificador: La descripcion ocupa todo el ancho */
+.form__grupo--full {
+    grid-column: 1 / -1;
+}
+
+/* Elemento: Area de texto para descripcion */
+.form__textarea {
+    background-color: var(--fondos-secundarios);
+    border: none;
+    border-radius: var(--radio-bordes-inputs);
+    padding: 10px;
+    font-family: inherit;
+    font-size: var(--fuente-size-p);
+    resize: none;
+    height: 150px;
+    outline: none;
+}
+
+/* Bloque: Contenedor de botones de accion */
+.form-acciones {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: var(--espaciado-grande-ancho);
+    margin-top: var(--espaciado-mediano-alto);
+}
+
+/* Elemento: Boton Cancelar (Estilo borde rojo oscuro) */
+.btn-cancelar {
+    background-color: rgba(94, 0, 2, 0.3);
+    border: 1px solid #5E0002;
+    color: #ff4d4d;
+    padding: 10px 30px;
+    border-radius: 20px;
+    /* Bordes muy redondeados como en diseño */
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    width: 30%;
+}
+
+.btn-cancelar:hover {
+    background-color: rgba(94, 0, 2, 0.6);
+}
+
+/* Elemento: Boton Añadir (Estilo borde morado) */
+.btn-anadir {
+    background-color: rgba(116, 0, 161, 0.2);
+    border: 1px solid var(--fuente-color-enlaces);
+    color: var(--fuente-color-enlaces);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 30%;
+    /* Si es un boton submit, quitamos estilos default */
+    font-family: inherit;
+}
+
+.btn-anadir:hover {
+    background-color: rgba(116, 0, 161, 0.4);
+}
